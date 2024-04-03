@@ -452,4 +452,39 @@ ul.breadcrumb li a:hover {
   width: 130px;
 }
 
+/* Media queries for tablet */
+@media screen and (max-width: 768px) {
+  .main-container {
+      padding: 10px;
+  }
+  .header {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+}
+
+/* Media queries for phone */
+@media screen and (max-width: 480px) {
+  .main-container {
+      padding: 5px;
+  }
+  .header {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .header p, .header .imggg {
+      margin: 5px 0;
+      text-align: center;
+  }
+}
+.list-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap; 
+}
+.list-wrapper {
+  display: inline-block;
+}
+
+
 
