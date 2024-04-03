@@ -83,6 +83,10 @@ function adjustStyles() {
     });
 }
 
+// Created a div to wrap the entire list
+const listWrapper = document.createElement('div');
+listWrapper.style.backgroundColor = 'white';
+
 data.forEach((user) => {
     const li = document.createElement("li");
     li.classList.add("userData");
@@ -120,9 +124,29 @@ data.forEach((user) => {
         <span>${user.NextAppointment}</span>
         <span>${user.Options}</span>
     `;
-    divv.appendChild(li);
+
+    // Appended each list item to the list wrapper
+    listWrapper.appendChild(li);
+
     filterArr.push(li);
 });
+
+// Appended the list wrapper to the main container
+divv.appendChild(listWrapper);
+
+// Calling adjustStyles initially and on window resize
+adjustStyles();
+window.addEventListener('resize', adjustStyles);
+
+const listContainer = document.createElement('div');
+listContainer.style.height = '300px'; 
+listContainer.style.overflowY = 'auto'; 
+listContainer.style.overflowX = 'auto'; 
+
+listContainer.appendChild(listWrapper); 
+
+// Appended the list container to the main container
+divv.appendChild(listContainer);
 
 // Calling adjustStyles initially and on window resize
 adjustStyles();
