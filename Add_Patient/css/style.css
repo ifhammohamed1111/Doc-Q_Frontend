@@ -228,7 +228,7 @@ ul.breadcrumb li a:hover {
   
   width: 80vw;
   margin: 0 0 0 auto;
-  height: 90vh;
+  height: 80vh;
   position: relative;
   background-color: #e0e0e0;
   
@@ -251,7 +251,7 @@ height: 7%;
 .mainTopSection .cancelSavebtnconatiner{
   width: 100%;
   height: 60%;
-  background-color: #e0e0e0;
+  /* background-color: #e0e0e0; */
   position: absolute;
   top: 45px;
  
@@ -295,9 +295,10 @@ height: 7%;
  }
 /* Form styles */
 
+
 .mainFormSection {
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   background-color: #e0e0e0;
  
   position: relative;
@@ -334,20 +335,26 @@ padding: 20px;
   border-color: gray;
   outline: none;
   border-radius: 5px;
-  height: 30px;
+  height: 40px;
 }
-#notes input{
-  width: 450px;
+ 
+#notes #notesInput{
   height: 80px;
 }
 #formContainer div #mydiv{
   position: relative;
-  right: 55px;
-  bottom: 20px;
+  right: 50px;
+  bottom: 40px;
+}
+#record{
+  position: relative;
+  top: 25px;
 }
 #mydiv{
   display: flex;
   flex-direction: column;
+  position: relative;
+  top: 3px;
 }
 #mydiv p{
   color: gray;
@@ -375,11 +382,240 @@ padding: 20px;
   
 }
 
+@media screen and (min-width:801px) and (max-width:992px){
+  .mainFormSection {
+    width: 100%;
+    height: 80vh;
+    background-color: #e0e0e0;
+   
+    position: relative;
+    margin-top: 160px;
+    display: flex;
+    justify-content: center;
+    
+  
+  }
+  .cancelSavebtnconatiner{
+    position: relative;
+    right: 30px;
+    padding: 0px 40px;
+  }
+  #formContainer{
+    width: 610px;
+    background-color: white;
+    position: relative;
+     margin-right: 200px;
+ 
+   top:40px;
+   height: auto;
+  }
+  #formContainer div{
+    display: flex;
+    justify-content: space-between;
+}
+#formContainer div input{
+  width: 180px;
+  position: relative;
+  right:7px ;
+  border-color: gray;
+  outline: none;
+  border-radius: 5px;
+  height: 50px;
+  align-items: center;
+}
+#sex button{
+  width:70px;
+}
+#sex #male{
+  position: relative;
+   left:80px
+}
+#sex #femalee{
+  position: relative;
+   right:10px;
+}
+#record{
+  position: relative;
+  top: 20px;
+}
+#mydiv{
+  display: flex;
+  justify-content: space-between;
+ position: relative;
+   left: 120px;
+  top:0px
+    
+}
+#mypara{
+  position: relative;
+  top: 10px;
+  left: 20px;
+  height: 40px;
+}
+  
+}
+@media screen and (min-width:421px) and (max-width:800px){
+  
+  .mainFormSection {
+    width: 100%;
+    height: 90vh;
+    background-color: #e0e0e0;
+    padding-top: 40px;
+    position: relative;
+   
+    display: flex;
+    justify-content: center;
+    
+  
+  }
+
+  #formContainer{
+    width: 525px;
+    background-color: white;
+   position: relative;
+   left: 1px;
+   bottom: 40px;
+   top:5px;
+   height: auto;
+  
+  }
+  .cancelSavebtnconatiner{
+    
+    position: relative;
+    right: 30px;
+    padding: 0px 40px;
+    
+  }
+  #formContainer div{
+    display: flex;
+    justify-content: space-between;
+}
+#formContainer div input{
+  width: 200px;
+  position: relative;
+  right:7px ;
+  border-color: gray;
+  outline: none;
+  border-radius: 5px;
+  height: 50px;
+  align-items: center;
+}
+#sex button{
+  width:70px;
+}
+#sex #male{
+  position: relative;
+   left:100px
+}
+#sex #femalee{
+  position: relative;
+   right:10px;
+}
+#record{
+  position: relative;
+  top: 20px;
+}
+
+#mydiv{
+  display: flex;
+  justify-content: space-between;
+ position: relative;
+   left: 30px;
+  top:0px
+    
+}
+#mypara{
+  position: relative;
+   left: 150px;
+}
+.mainTopSection{
+  margin-bottom: 10px;
+}
+}
+
+
+@media screen and (max-width:420px) {
+  .cancelSavebtnconatiner{
+    position: relative;
+    right: 30px;
+    padding: 0px 40px;
+  }
+  .btnConatiner{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
+  .bothbtn{
+     display: flex;
+     justify-content: center;
+     padding-left: 75px;
+     padding-bottom: 20px;
+  
+  }
+  #formContainer{
+    width: 240px;
+    background-color: white;
+   position: relative;
+   left: 7px;
+   bottom: 40px;
+   top:5px;
+  }
+  .mainFormSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+  }
+  #formContainer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  
+  
+  }
+  #formContainer div input{
+    width: 150px;
+    position: relative;
+    right:7px ;
+    border-color: gray;
+    outline: none;
+    border-radius: 5px;
+    height: 30px;
+    align-items: center;
+  }
+    
+  
+  #sex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #femalee{
+    position: relative;
+    right: 5px;
+    top: 10px;
+    
+  }
+  #mydiv{
+    display: flex;
+    flex-direction: column;
+   position: relative;
+   left: 9px;
+   top: 20px;
+  }
+ 
+}
+
 /* media -queries */
 
 /* navbar */
 
 @media (max-width: 480px) {
+  .mainFormSection{
+    padding-top: 40px;
+  }
   .navbar {
     max-width: 480px;
     height: 60px;
@@ -561,6 +797,9 @@ padding: 20px;
 
   .sidenav_link p {
     display: none;
+  }
+  .mainFormSection{
+    padding-top: 40px;
   }
 
    
