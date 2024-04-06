@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Doctor Profile</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="body">
+      <!-- Navbar -->
+      <div class="top">
+        <div class="logo">
+          <img src="./Images/companyLogo.png" width="90px" height="90px" />
+          <img
+            id="secondimg"
+            src="./Images/Doc-Q.png"
+            width="60px"
+            height="20px"
+          />
+        </div>
+        <div class="menuContainer">
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./services.html">Our Services</a></li>
+            <li>
+              <a href="./findDoctors.html" style="color: #5284b5"
+                >Find Doctors</a
+              >
+            </li>
+            <li><a href="./register.html">Login\Register</a></li>
+          </ul>
+        </div>
+        <div class="searching">
+          <input placeholder="Search" />
+        </div>
+
+        <div class="hamburgerIcon">
+            <div class="menu">
+                <a>
+                    <i
+                      class="fa fa-bars"    
+                      style="font-size: 18px"
+                      onclick="handleMenu()"
+                    ></i
+                  ></a>
+            </div>
+
+          <div id="setIcons" >
+            <div class="mobileMenu">
+                <ul>
+                  <li><a href="./home.html">Home</a></li>
+                  <li><a href="./services.html">Our Services</a></li>
+                  <li>
+                    <a href="./findDoctors.html" style="color: #015db9"
+                      >Find Doctors</a
+                    >
+                  </li>
+                  <li><a href="./register.html">Login\Register</a></li>
+                </ul>
+              </div>
+
+          </div>
+        </div>
+      </div>
+       <!-- navbar ends here  -->
+    <div id="parent-standard-width-wrapper">
+      <div class="standard-width">
+
+        <div class="outerConatiner" id="outerConatiner">
+            <div class="container">
+                <div class="bg-round"></div>
+              <div class="wrapper">
+                <div class="doctor-info">
+                  <div class="doctor-details">
+                    <div class="details-text">
+                      <h1>Dr. Shawn Mandles</h1>
+                      <div class="mypara">
+                        <p><b>BDS, MDS</b> - Prosthodontist And Crown Bridge</p>
+                        <p>Implantologist,</p>
+                        <p>Cosmetic/Aesthetic Dentist,</p>
+                        <p>Dental Surgeon,</p>
+                        <p>Dentist</p>
+                        <p><b>19 Years</b> Experience Overall</p>
+                      </div>
+                    </div>
+                    <div class="image-container">
+                      <div class="doctor-image"></div>
+      
+                      <img src="./Images/doctor.png" alt="Doctor Image" />
+                    </div>
+                  </div>
+                  <div class="info-text">
+                    <p class="tick">
+                      <i class="fa fa-check-square"></i>Registration Verified
+                    </p>
+                    <p class="thumb">
+                      <i class="fa fa-thumbs-up"></i>98% (1665 patients)
+                    </p>
+                    <p class="lastpara">
+                      Consult Dentist Implantologist Dr. Sourabh Nagpal, one of the
+                      Dentist in Delhi. Dr. Sourabh is running one of the implantology
+                      centers in south Delhi, along with more..
+                    </p>
+                    <div class="divider"></div>
+                  </div>
+                  <div class="location-info">
+                    <h2>Information</h2>
+                    <p class="bold">Vasant Vihar, Delhi</p>
+                    <p>Matrix Dental & Skin Lounge</p>
+                    <div class="rating">
+                      <p>4.1</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>14, Ground floor, Poorvi Marg, Delhi</p>
+                    <p class="blue">Get Directions</p>
+                  </div>
+                </div>
+                <div class="appointment-container">
+                  <div class="appointment-card">
+                    <div class="appointment-header">
+                      <h3>Pick a time slot</h3>
+                    </div>
+                    <div class="appointment-info">
+                      <div>Clinic Appointment</div>
+                      <div class="bold">$100 fee</div>
+                    </div>
+                    <div class="clinic-info">
+                      <div>
+                        <p>Clinic Hair & Skin</p>
+                        <div class="rating">
+                          <p>5</p>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <p class="light-text">Banglore, 290010</p>
+                      </div>
+                      <div class="change-clinic">
+                        <select>
+                          <option>Change Clinic</option>
+                        </select>
+                        <i class="fa fa-angle-down"></i>
+                      </div>
+                    </div>
+                    <div class="date-info">
+                      <div>
+                        <p>TODAY</p>
+                        <p class="green">12 slots available</p>
+                      </div>
+                      <div>
+                        <p>TOMORROW</p>
+                        <p class="light-text">No slots available</p>
+                      </div>
+                      <div>
+                        <p>MONDAY</p>
+                        <p class="green">25 slots available</p>
+                      </div>
+                    </div>
+                    <div class="time-slots">
+                      <div class="slot blue-border">
+                        <p>10 - 11 AM</p>
+                      </div>
+                      <div class="slot blue-border">
+                        <p>11 - 12 PM</p>
+                      </div>
+                      <div class="slot blue-border">
+                        <p>12 - 01 PM</p>
+                      </div>
+                      <div class="slot blue-border">
+                        <p>01 - 02 PM</p>
+                      </div>
+                      <div class="slot blue-border">
+                        <p>02 - 03 PM</p>
+                      </div>
+                      <div class="slot blue-border">
+                        <p>03 - 04 PM</p>
+                      </div>
+                      <div class="slot blue-border">
+                        <p>04 - 05 PM</p>
+                      </div>
+                      <div class="slot blue-border">
+                        <p>05 - 06 PM</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+      </div>
+    </div>
+  
+    <script src="script.js"></script>
+  </body>
+</html>

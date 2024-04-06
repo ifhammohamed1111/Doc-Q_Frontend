@@ -1,0 +1,514 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #f6fafe;
+}
+
+#parent-standard-width-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.standard-width {
+  width: calc(100% - (100% / 12));
+}
+/* Navigation bar starts from here  */
+.top {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  padding-right: 3%;
+  background-color:white;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.secondimg {
+  position: relative;
+  right: 10px;
+}
+
+.menuContainer ul {
+  display: flex;
+  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  color: gray;
+  text-decoration-line: line-through;
+}
+
+ul li:nth-child(3) a{
+  text-decoration: none;
+  color: gray;
+  text-decoration-line: none;
+}
+
+.menuContainer ul li {
+  margin-left: 40px;
+}
+.searching input {
+  width: 300px;
+  height: 30px;
+  border: 1px solid #bbbbbb;
+  border-radius: 30px;
+  align-items: center;
+  color: #bbbbbb;
+  text-decoration: none;
+  padding-left: 15px;
+}
+.hamburgerIcon {
+  display: none;
+}
+
+#setIcons{
+  display: none;
+}
+
+
+/* Navigation bar ends here */
+
+/* ----------------- Doctor profile page starts from here --------------*/
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+.container {
+  position: relative;
+
+  /* overflow: hidden; */
+} 
+.bg-round{
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  left: -38rem;
+  z-index: -1;
+  background: #8abbf636;
+
+}
+.doctor-info {
+  border-right: 1px solid gray;
+  min-height: 88svh;
+  width:60vw;
+
+}
+.doctor-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  padding-top: 1rem;
+}
+.details-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.doctor-details h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px #000000ad;
+}
+
+.mypara {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 1.3rem;
+}
+.image-container img {
+  width: 35%;
+  margin-left: 8rem;
+}
+.image-container {
+  position: relative;
+}
+
+.doctor-image {
+  width: 220px;
+  height: 220px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: -1;
+  top: 2.7rem;
+  left: 7.5rem;
+  background: linear-gradient(134.07deg, #7cb9ff 3.47%, #105cb3 95.7%);
+}
+
+.info-text {
+  font-size: 1.3rem;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 2rem 0;
+}
+
+.tick,
+.thumb {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.tick i {
+  color: rgb(10, 185, 10);
+}
+
+.thumb i {
+  font-size: 14px;
+  background-color: rgb(10, 185, 10);
+  color: white;
+  border-radius: 3px;
+  padding: 5px;
+}
+.lastpara {
+  padding-top: 0.6rem;
+  line-height: 2.4rem;
+}
+.divider{
+  border-top:2px solid gray;
+  width:95%;
+}
+
+.location-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 1.3rem;
+}
+.location-info h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #00305f;
+}
+.bold {
+  font-weight: bold;
+}
+
+.rating {
+  display: flex;
+  justify-items: center;
+  gap: 0.3rem;
+}
+.rating i {
+  color: #ffc224;
+}
+.rating i:last-child {
+  color: #8b8b8b;
+}
+.blue {
+  color: #00305f;
+}
+
+/* right section starts from here */
+
+.appointment-container {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5rem;
+ 
+}
+.appointment-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 90%;
+  min-height: 70svh;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+  box-shadow: -4px 6px 17px 0px #00000040;
+}
+
+.appointment-header h3 {
+  font-size: 1.4rem;
+}
+.appointment-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 20px;
+  color: white;
+  padding: 0.6rem;
+  background: linear-gradient(118.17deg, #5284b5 6.86%, #8abbf6 103.41%);
+}
+
+.clinic-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  line-height: 1.5rem;
+}
+
+.change-clinic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+.change-clinic select {
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  color: #2f80ed;
+}
+.change-clinic i {
+  color: #2f80ed;
+  font-size: 1rem;
+}
+
+.date-info {
+  padding: 0.5rem 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  border: 1px solid #0000001a;
+  box-shadow: 0px 2px 5.3px 0px #00000026;
+}
+.green {
+  font-size: 0.8rem;
+  color: green;
+}
+.light-text {
+  font-size: 0.8rem;
+  color: #8b8b8b;
+}
+
+.time-slots {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+.slot {
+  border: 1px solid #105cb3;
+  color: #105cb3;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+/* ----------navbar for mobile screen-------- */
+@media screen and (min-width: 200px) and (max-width: 420px) {
+  .wrapper {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .menuContainer {
+    display: none;
+  }
+  .menuContainer ul {
+    display: none;
+  }
+  .searching {
+    display: none;
+  }
+  .hamburgerIcon {
+    display: block;
+    position: relative;
+  }
+
+  
+
+  #setIcons{
+    position:absolute;
+    top: 2rem;
+    width: 100svw;
+    height: 50svh;
+    right:0rem;
+    z-index: 100;
+
+  }
+
+ 
+.mobileMenu ul{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: center;
+  list-style-type: none;
+  gap: .5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  background: #fffefe98;
+-webkit-backdrop-filter: blur(50px);
+backdrop-filter: blur(4px);
+border: 1px solid rgba(255,255,255,0.25);
+  
+
+}
+.mobileMenu ul li{
+  padding: 12px;
+}
+
+
+
+
+
+  .details-text h1 {
+    font-size: 1.9rem;
+  }
+
+  .image-container img {
+    margin-left: 0rem;
+    width: 63%;
+  }
+  .doctor-info {
+    border-right:none;
+    width:100vw;
+  
+  }
+
+  .doctor-image{
+    left:4rem;
+    top: 4.8rem;
+  }
+
+  .info-text {
+    width: 100%;
+  }
+
+  .appointment-container {
+    margin-top: 4rem;
+    width: 100svw;
+  padding-left: 0rem;
+
+  }
+
+  .appointment-card{
+    width: 100svw;
+    font-size: 1rem;
+  }
+  .divider{
+   display: none;
+  }
+
+   
+}
+/* ----------navbar for tablet screen-------- */
+@media screen and (min-width: 421px) and (max-width:900px) {
+  .menuContainer {
+    display: none;
+  }
+  .menuContainer ul {
+    display: none;
+  }
+  .searching {
+    display: block;
+    /* width:10px; */
+  }
+ 
+
+  .hamburgerIcon {
+    display: block;
+    position: relative;
+  }
+
+  
+
+  #setIcons{
+    position:absolute;
+    top: 3rem;
+    width: 100svw;
+    height: 50svh;
+    right:0rem;
+    z-index: 100;
+
+  }
+
+ 
+.mobileMenu ul{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: center;
+  list-style-type: none;
+  gap: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  background: #fffefe98;
+-webkit-backdrop-filter: blur(30px);
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255,255,255,0.25);
+  
+
+
+}
+.mobileMenu ul li{
+  padding: 12px;
+}
+
+
+
+
+
+
+
+
+  .wrapper {
+    flex-wrap: wrap;
+  }
+
+  .doctor-details {
+    flex-wrap: nowrap;
+  }
+
+  .doctor-info {
+    border-right:none;
+    width: 100%;
+    /* border: 1px solid red; */
+  
+  }
+
+  .details-text h1 {
+    font-size: 2rem;
+  }
+
+  .image-container img {
+    width: 50%;
+  }
+
+  .info-text {
+    width: 100%;
+  }
+
+  .appointment-container {
+    margin-top: 4rem;
+    width: 100%;
+    padding: 0rem;
+
+  }
+  .divider{
+   display: none;
+  }
+}
