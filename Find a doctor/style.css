@@ -20,7 +20,12 @@ nav {
     padding: 10px 20px;
 }
 .logo {
-    padding-left: 40px;
+    width: 100px;
+}
+
+.logo img{
+    object-fit: cover;
+    width: 100%;
 }
 
 nav ul {

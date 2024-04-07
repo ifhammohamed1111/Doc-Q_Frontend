@@ -29,17 +29,15 @@ body {
   top: 0;
 }
 
-.logo_container {
-  width: 30vw;
-  height: 50px;
-}
+
 
 .logo {
-  max-width: 200px;
-  text-align: center;
-  font-size: 32px;
-  color: #2f80ed;
-  text-align: center;
+  max-width: 100px;
+}
+
+.logo img{
+  object-fit: cover;
+  width: 100%;
 }
 
 .nav_items {

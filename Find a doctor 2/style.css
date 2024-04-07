@@ -20,13 +20,13 @@
 
     }
     .logo {
-    display: flex;
-    align-items: center;
+      width: 100px;
     }
-    .secondimg {
-    position: relative;
-    right: 10px;
-    }
+
+   .logo img{
+     object-fit: cover;
+     width: 100%;
+   }
     .menuContainer {
     /* border: 2px solid teal; */
     }
