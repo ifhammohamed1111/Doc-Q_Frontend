@@ -63,6 +63,38 @@ let data = [
         LastAppointment: "17/10/2022",
         NextAppointment: "2/12/2022",
         Options: "...",
+    },
+    {
+        Name: "Paul christian",
+        Diagnosis: "Gonorrhea",
+        Status: "On treatment",
+        LastAppointment: "22/10/2022",
+        NextAppointment: "3/12/2022",
+        Options: "...",
+    },
+    {
+        Name: "Rosabel Briggs",
+        Diagnosis: "Malaria",
+        Status: "Recovered",
+        LastAppointment: "23/10/2022",
+        NextAppointment: "4/12/2022",
+        Options: "...",
+    },
+    {
+        Name: "Tina Adekeye",
+        Diagnosis: "Syphilis",
+        Status: "Recovered",
+        LastAppointment: "19/10/2022",
+        NextAppointment: "5/12/2022",
+        Options: "...",
+    },
+    {
+        Name: "Mark Bossman",
+        Diagnosis: "Malaria",
+        Status: "Recovered",
+        LastAppointment: "17/10/2022",
+        NextAppointment: "2/12/2022",
+        Options: "...",
     }
 ];
 
@@ -113,16 +145,20 @@ data.forEach((user) => {
     }
 
     if (user.Status === "Recovered" || user.Status === "Awaiting surgery" || user.Status === "On treatment") {
-        borderRadius = "15px";
+        borderRadius = "20px";
     }
 
     li.innerHTML = `
-        <span>${user.Name}</span>
-        <span>${user.Diagnosis}</span>
-        <span style="background-color: ${bgColor}; color: ${textColor}; border-radius: ${borderRadius}; padding: 5px 10px;">${user.Status}</span>
-        <span>${user.LastAppointment}</span>
-        <span>${user.NextAppointment}</span>
-        <span>${user.Options}</span>
+    <ul class="userListJs">
+    <li>
+       <div class="userDataItem">${user.Name}</div>
+       <div class="userDataItem">${user.Diagnosis}</div>
+       <div class="userDataItem pat-status" style="background-color: ${bgColor}; color: ${textColor}; border-radius: ${borderRadius}; width:150px;">${user.Status}</div>
+       <div class="userDataItem">${user.LastAppointment}</div>
+       <div class="userDataItem">${user.NextAppointment}</div>
+       <div class="userDataItem option">${user.Options}</div>
+    </li>
+  </ul>
     `;
 
     // Appended each list item to the list wrapper
@@ -139,7 +175,7 @@ adjustStyles();
 window.addEventListener('resize', adjustStyles);
 
 const listContainer = document.createElement('div');
-listContainer.style.height = '300px'; 
+listContainer.style.height = '600px'; 
 listContainer.style.overflowY = 'auto'; 
 listContainer.style.overflowX = 'auto'; 
 
