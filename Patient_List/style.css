@@ -321,6 +321,10 @@ ul.breadcrumb li a:hover {
     display: none;
   }
 
+
+  .date{
+    color: rgb(105, 105, 105);
+  }
  
 }
 @media (min-width: 480px) and (max-width: 900px) {
@@ -464,18 +468,21 @@ ul.breadcrumb li a:hover {
 
 }
 
+
+
 .userListJs {
   width: 100%;
 }
 .userListJs li{
   display: grid;
   grid-template-columns: repeat(6,1fr);
-  grid-column-gap: 10rem;
+  grid-column-gap: 8rem;
   padding-left: 2rem;
+
 }
 .userDataItem{
   display: flex;
-  justify-content:start;
+  justify-content:center;
   align-items:center;
   font-size: 1rem;
 }
@@ -483,8 +490,8 @@ ul.breadcrumb li a:hover {
   display: flex;
   justify-content:center;
   align-items:center;
-
-
+  padding: 0 !important;
+  width: 150px !important;
 }
 
 .userData{
@@ -497,11 +504,15 @@ ul.breadcrumb li a:hover {
   text-align: right;
 }
 .heading-option{
-  text-align: left;
-  padding-right: 2rem;
+  text-align: center;
+  padding-right: 0rem;
 }
 
-
+.userDataItem p{
+  font-size: 1rem;
+  padding-right: .2rem;
+  font-weight: 600;
+}
 
 
 .logo img{
@@ -535,11 +546,18 @@ ul.breadcrumb li a:hover {
   cursor: pointer;
 }
 
+#userList1{
+  overflow-x:hidden;
+  width: 83svw !important;
+  background: #fff;
+  /* border: 1px solid red; */
+}
+
 /* Media queries for tablet */
 @media screen and (max-width: 868px) {
  
   .header-burger{
-    display: block;
+    display: none;
   }
    
   
@@ -554,46 +572,125 @@ ul.breadcrumb li a:hover {
   .main-container {
       padding: 10px;
   }
-  .header {
-      /* flex-wrap: wrap; */
-      justify-content: space-between;
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem;
+  
   }
 
   .imggg{
-    display: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+    margin-left: 0px;
+    gap: 15px;
+    cursor: pointer;
   }
+  #userList1{
+    overflow-x:hidden;
+    width: 83svw !important;
+    background: #fff;
+    font-size: .8rem;
+    /* border: 1px solid red; */
+  }
+
+
+
+
 }
 
 /* Media queries for phone */
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 480px) {
+   #sideSection{
+     display: none;
+   }
 
-
+   #burger{
+     padding-left: 2.5rem;
+   }
+  .header-burger{
+    display: block;
+  }
 
   .main-container {
-      padding: 5px;
-      margin-left: 22%;
+      /* padding: 5px;
+      margin-left: 22%; */
+      margin: 0;
   }
   .header {
       flex-wrap: wrap;
       justify-content:space-between;
-      width: 75svw;
+      width: 95svw;
+  }
+
+  .heading-option{
+    padding-right: 0;
+    text-align: center;
+  }
+  .option{
+    font-size: 1rem;
+    text-align: center;
+    padding-right: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   #userList1{
-    overflow-x:scroll;
+    overflow-x:hidden;
+    width: 96svw !important;
     background: #fff;
+    font-size: .8rem;
+    /* border: 1px solid red; */
+  }
+   
+  .userListJs li{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: .2rem;
+    padding: 0;
   }
 
-  .list-container {
-    width: 100%;
-    overflow-x:auto;
-    overflow-y: auto;
+
+
+  .pat-status{
+    font-size: .8rem;
+    width: 0px;
+    height: 30px;
+    padding: 0 !important;
+  }
+ 
+  .userDataItem p{
+    font-size: 1rem;
+    padding-right: .2rem;
+    font-weight: 600;
+  }
+
+  .userDataItem{
+    text-align: center;
+    line-height: 1rem;
   }
   
-  .list-wrapper {
-    display: inline-block;
+  .pat-count{
+    margin-right:5rem;
   }
 
+  .fa-bars{
+    margin-left: -2rem !important;
+  }
+  
+
+  /* .list-container {
+    width: 100%;
+    border: 1px solid red;
+    overflow-y: auto;
+  } */
+ 
 
 }
 

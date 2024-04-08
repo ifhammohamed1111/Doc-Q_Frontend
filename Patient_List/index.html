@@ -45,11 +45,14 @@
         </nav>
 
         <div class="hero_section">
-            <div class="sidebar">
+            <div class="sidebar" id="sideSection">
+                <div class="header-burger" id="burger" onclick="handleMenu()">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
                 <p>menu</p>
                 <ul>
                     <li class="sidebar_item  "><a href="#" class="sidenav_link active">
-                            <div>
+                            <div id="bars">
                                 <i class="fa-solid fa-chart-pie fa-2x"></i>
                             </div>
                             <p>Dashboard</p>
@@ -122,14 +125,17 @@
             <div class="main-container">
                 <p>Patient registrer</p>
                 <div class="header">
-                    <p><b>Total Patients</b> (487)</p>
-                    <div class="imggg">
-                        <img src="Frame 81.png" />
-                        <img src="Frame 80.png" />
-                        <img src="Frame 82.png" />
-                    </div>
-                    <div class="header-burger">
+                    <div class="header-burger" id="burger" onclick="handleMenu()">
                         <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="pat-count">
+                        <p><b>Total Patients</b> (487)</p>
+                    </div>
+                   
+                    <div class="imggg">
+                        <img src="Frame 81.png" alt="" />
+                        <img src="Frame 80.png"  alt=""/>
+                        <img src="Frame 82.png"  alt=""/>
                     </div>
                 </div>
                 <div class="list">
@@ -166,6 +172,22 @@
             </div>
         </div>
     </header>
+
+     <script>
+     let toggle = false;
+        let sidebar = document.getElementById("sideSection");
+
+        const handleMenu = () => {
+            if (toggle === false) {
+                sidebar.style.display = "block"; // Show sidebar
+                toggle = true;
+            } else {
+                sidebar.style.display = "none"; // Hide sidebar
+                toggle = false;
+            }
+        };
+
+     </script>
     <script src="index.js"></script>
     <script src="index2.js"></script>
 </body>

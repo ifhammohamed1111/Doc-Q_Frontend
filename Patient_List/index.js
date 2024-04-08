@@ -111,7 +111,7 @@ function addCurrentDayHighlight() {
 
 function generateBreadCrumb() {
   // Breadcrumb JS
-  var ul = docment.getElementById("breadcrumb");
+  var ul = document.getElementById("breadcrumb");
   var a = document.createElement("a");
   var li = document.createElement("li");
   a.appendChild(document.createTextNode("Summary"));
@@ -122,5 +122,9 @@ function generateBreadCrumb() {
 generateCalendar();
 
 generateBreadCrumb();
+
+
+
+
 
 

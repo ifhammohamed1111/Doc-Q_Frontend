@@ -119,7 +119,7 @@ function adjustStyles() {
 const listWrapper = document.createElement('div');
 listWrapper.style.backgroundColor = 'white';
 
-data.forEach((user) => {
+data.forEach((user,i) => {
     const li = document.createElement("li");
     li.classList.add("userData");
 
@@ -151,11 +151,11 @@ data.forEach((user) => {
     li.innerHTML = `
     <ul class="userListJs">
     <li>
-       <div class="userDataItem">${user.Name}</div>
+       <div class="userDataItem"><p>${i+1}.</p>${user.Name}</div>
        <div class="userDataItem">${user.Diagnosis}</div>
-       <div class="userDataItem pat-status" style="background-color: ${bgColor}; color: ${textColor}; border-radius: ${borderRadius}; width:150px;">${user.Status}</div>
-       <div class="userDataItem">${user.LastAppointment}</div>
-       <div class="userDataItem">${user.NextAppointment}</div>
+       <div class="userDataItem pat-status" style="background-color: ${bgColor}; color: ${textColor}; border-radius: ${borderRadius}; width:100px;">${user.Status}</div>
+       <div class="userDataItem date">${user.LastAppointment}</div>
+       <div class="userDataItem date">${user.NextAppointment}</div>
        <div class="userDataItem option">${user.Options}</div>
     </li>
   </ul>
@@ -176,8 +176,8 @@ window.addEventListener('resize', adjustStyles);
 
 const listContainer = document.createElement('div');
 listContainer.style.height = '600px'; 
-listContainer.style.overflowY = 'auto'; 
-listContainer.style.overflowX = 'auto'; 
+// listContainer.style.overflowY = 'auto'; 
+// listContainer.style.overflowX = 'auto'; 
 
 listContainer.appendChild(listWrapper); 
 
