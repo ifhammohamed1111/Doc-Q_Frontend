@@ -1,7 +1,7 @@
 const filterArr = [];
 let data = [
     {
-        Name: "Mary Joseph lastname",
+        Name: "Mary Joseph",
         Diagnosis: "Malaria",
         Status: "Recovered",
         LastAppointment: "20/10/2022",
