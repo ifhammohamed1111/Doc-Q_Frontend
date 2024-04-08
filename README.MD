@@ -26,8 +26,28 @@
 
 
 ## Introduction
+Are you tired of spending hours waiting to see a doctor? Bid farewell to long queues and embrace convenience with DOC-Q! Our innovative app addresses the perennial issue of waiting in hospitals by revolutionizing the entire healthcare process.
+
+👩‍⚕️ **How it Works:**
+
+1️⃣ Easily book appointments for consultations, scans, blood tests, and surgeries.
   
-Add Projects introduction
+2️⃣ Access offline consultations promptly at your designated time, saving you precious hours.
+  
+3️⃣ Benefit from our extensive network of private diagnostic labs and scanning centers for efficient testing.
+  
+4️⃣ Need surgery? No worries! Book your appointment hassle-free at our private operation theaters.
+
+💡 **What Sets Us Apart:**
+
+✅ Say goodbye to waiting months for an appointment. Gain swift access to quality healthcare.
+
+✅ Enjoy affordable rates with transparent pricing. We believe in making healthcare accessible to everyone.
+
+✅ Empower clinical doctors and foster efficiency in healthcare delivery.
+
+Experience the future of healthcare with DOC-Q. Say hello to convenience and goodbye to queue woes!
+
 
 ## Installation
 
@@ -157,6 +177,8 @@ Recognize and acknowledge the contributions of others, whether through code revi
 ### [Bondugula Aadhi]()
 ### [Mustafa Kenliç]()
 
+## Doc-Q License 
+All rights reserved for the DOC-Q project. This project and its associated code, documentation, and resources are the property of DOC-Q and may not be reproduced, distributed, modified, or used in any form without the express written permission of DOC-Q. For inquiries regarding the use of the DOC-Q project or to request permission for specific use cases, please contact [DOC-Q Email]().
 
 
 
@@ -222,10 +244,10 @@ Recognize and acknowledge the contributions of others, whether through code revi
     button {
       border: none;
       background: none;
-      padding: 0.5rem 4rem;
+      padding: 0.4rem 2rem;
       border-radius: 5px;
       color: #fff;
-      margin: .5rem;
+      margin: .2rem;
       cursor: pointer;
       transition: transform 0.3s ease-in-out;
     }
