@@ -1,16 +1,4 @@
-<div class="logo">
-        <span class="plus">+</span> <span class="doc">Doc</span>-Q
-      </div>
 
-
-
-
-
-
-
-
-
-# 
 
 # Doc-Q Group-Four  
 
@@ -18,11 +6,11 @@
 ## Navigation
 
 
-[<button class="btn1">Introduction</button>](#introduction)
-[<button class="btn2">Installation</button>](#installation)
-[ <button class="btn3">TODO</button>](#todo)
-[<button class="btn4">Guidelines</button>](#guidelines)
-[<button class="btn5">Contributors</button>](#Contributors)
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Assign Task](#todo)
+- [Guidelines](#guidelines)
+- [Contributors](#Contributors)
 
 
 ## Introduction
@@ -238,79 +226,3 @@ All rights reserved for the DOC-Q project. This project and its associated code,
 
 
 
-
-  <style>
-  
-    button {
-      border: none;
-      background: none;
-      padding: 0.4rem 2rem;
-      border-radius: 5px;
-      color: #fff;
-      margin: .2rem;
-      cursor: pointer;
-      transition: transform 0.3s ease-in-out;
-    }
-
-    button:hover {
-      animation: shake 0.5s ease-in-out; /* Apply the shake animation on hover */
-    }
-
-    @keyframes shake {
-      0% {
-        transform: translateX(0);
-      }
-      25% {
-        transform: translateX(-5px);
-      }
-      50% {
-        transform: translateX(5px);
-      }
-      75% {
-        transform: translateX(-5px);
-      }
-      100% {
-        transform: translateX(0);
-      }
-    }
-
-    .btn1 {
-      background: #4366b2;
-    }
-    .btn2 {
-      background: #50BEBF;
-    }
-
-    .btn3 {
-      background: #ca2127;
-    }
-
-    .btn4 {
-      background: #95d13b;
-    }
-
-    .btn5 {
-      background: #13aa52;
-    }
-
-    .logo {
-      font-size: 2rem;
-      color: #010100;
-      background: #ffffff;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      border-radius:5px;
-    }
-
-    .plus{
-        color: #35BDC3;
-        font-weight: 700;
-        font-size: 2.5rem;
-    }
-    .doc{
-        color: #5284B5;
-        text-decoration: underline;
-    }
-
-  </style>
