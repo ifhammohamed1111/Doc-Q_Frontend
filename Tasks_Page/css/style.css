@@ -321,6 +321,8 @@ ul.breadcrumb li a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 15px;
+
 }
 
 .info-content input {
@@ -349,6 +351,8 @@ ul.breadcrumb li a:hover {
 .task-date{
   display: flex;
   gap: 1rem;
+  color: #4F4F4F;
+
 }
 .task-date input{
   visibility: hidden;
@@ -703,7 +707,7 @@ ul.breadcrumb li a:hover {
   }
 
 .uncomplete_task_info{
-  width: 100svw !important;
+  width: 100%;
 }
 
 .info-content{
