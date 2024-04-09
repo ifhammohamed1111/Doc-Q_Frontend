@@ -27,9 +27,7 @@
      object-fit: cover;
      width: 100%;
    }
-    .menuContainer {
-    /* border: 2px solid teal; */
-    }
+ 
     .menuContainer ul {
     display: flex;
     margin-left: 20px;
@@ -179,8 +177,8 @@
 
     /*  Main Page */
 
-     /* ----------main page mobile screen------ */
-     @media screen and (min-width: 200px) and (max-width: 420px) {
+     /* ----------main page mobile screen------ */ 
+      /* @media screen and (min-width: 200px) and (max-width: 420px) {
         .upperbottom {
             display: flex;
             justify-content: center;
@@ -215,10 +213,10 @@
             right:50px;
             bottom: 45px;
         }
-     }
+     }  */
 
       /* ----------main page for tablet screen-------- */
-    @media screen and (min-width: 421px) and (max-width: 767px) {
+    /* @media screen and (min-width: 421px) and (max-width: 767px) {
         .upperbottom  {
             display: flex;
             justify-content: center;
@@ -268,7 +266,7 @@
 
         }
 
-    }
+    } */
     @media screen and (min-width:768px) and (max-width:991px) {
         .userData{
             display: flex;
@@ -316,4 +314,116 @@
         }
 
 
+}
+    @media screen and (max-width:768px){
+        .userData {
+            display: flex;
+            flex-direction: row;
+            font-size: 24px;
+            position: relative;
+            max-height: 50px;
+            padding: 40px;
+        }
+        .inneruserData1 {
+            display: flex;
+            position: absolute;
+            left: -218px;
+        }
+        .outerConatiner {
+            width: 100%;
+            height: 100vh;
+        overflow-x: hidden;
+            /* border: 2px solid red; */
+        }
+        .lowerbottom {
+            height: 85%;
+            width: 100%;
+            overflow-x: scroll;
+            /* border: 2px solid red; */
+        }
+ 
+        .userList{
+            width: 837px;
+        }
+        .userData {
+            display: flex;
+            flex-direction: row;
+            font-size: 24px;
+            position: relative;
+            max-height: 50px;
+            padding: 50px;
+            gap: 100px;
+            column-gap: 2rem;
+        }
+        .inneruserData2 {
+            display: flex;
+            position: absolute;
+            left: 600px;
+            /* right: 10px; */
+        }
+        .upperbottom {
+            height: 15%;
+            width: 50%;
+            /* border: 2px solid blue; */
+            /* padding: 20px 0; */
+            display: flex;
+            /* -ms-flex-align: start; */
+            align-items: center;
+        }
+        .inneruserData2 {
+            padding-right: 10px;
+        }
+        .ml-10{
+        margin-left: 68%;
+        }
+        .ml-9{
+            text-wrap: nowrap;
+            width: 150px;
+        margin-left: 18%;
+        }
+    }
+    @media screen and (max-width:425px){
+        .upperbottom {
+            height: 15%;
+            width: 73%;
+            /* border: 2px solid blue; */
+            /* padding: 20px 0; */
+            display: flex;
+            /* -ms-flex-align: start; */
+            align-items: center;
+        }
+        .searching input {
+            width: 233px;
+            height: 30px;
+            border-radius: 30px;
+            align-items: center;
+            color: gray;
+            text-decoration: none;
+            padding-left: 15px;
+        }
+        .ml-9{
+            text-wrap: nowrap;
+            width: 150px;
+        margin-left: 24%;
+        }
+        .ml-10 {
+            margin-left: 120%;
+        }
+    }
+    @media screen and (max-width:325px){
+        .ml-10 {
+            margin-left: 135%;
+        }
+        .searching {
+            display: block;
+        }
+        .searching input {
+            width: 180px;
+            height: 30px;
+            border-radius: 30px;
+            align-items: center;
+            color: gray;
+            text-decoration: none;
+            margin-right: 10px;
+        }
     }
