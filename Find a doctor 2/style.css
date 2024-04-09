@@ -426,4 +426,14 @@
             text-decoration: none;
             margin-right: 10px;
         }
+        .bottom {
+            height: 88vh;
+            width: 100%;
+            /* padding: 0px 3%; */
+            padding-left: 23px;
+            /* border: 2px solid blue; */
+        }
+        .ml-10 {
+            margin-left: 152%;
+        }
     }
