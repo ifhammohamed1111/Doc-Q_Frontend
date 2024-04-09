@@ -151,7 +151,8 @@ data.forEach((user,i) => {
     li.innerHTML = `
     <ul class="userListJs">
     <li>
-       <div class="userDataItem"><p>${i+1}.</p>${user.Name}</div>
+        
+       <div class="userDataItem numbers"><p>${i+1}.</p>${user.Name}</div>
        <div class="userDataItem">${user.Diagnosis}</div>
        <div class="userDataItem pat-status" style="background-color: ${bgColor}; color: ${textColor}; border-radius: ${borderRadius}; width:100px;">${user.Status}</div>
        <div class="userDataItem date">${user.LastAppointment}</div>

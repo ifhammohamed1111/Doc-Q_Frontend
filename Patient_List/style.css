@@ -560,6 +560,11 @@ ul.breadcrumb li a:hover {
     display: none;
   }
    
+
+  .pat-status{
+    width: 120px !important;
+    height: 40px;
+  }
   
  
   .userListJs li{
@@ -567,6 +572,7 @@ ul.breadcrumb li a:hover {
     grid-template-columns: repeat(6,1fr);
     grid-column-gap: 2rem;
     padding: 0;
+    /* text-wrap: nowrap; */
   }
  
   .main-container {
@@ -622,15 +628,27 @@ ul.breadcrumb li a:hover {
       margin: 0;
   }
   .header {
-      flex-wrap: wrap;
-      justify-content:space-between;
+      flex-wrap: nowrap;
+      justify-content:center;  
+      gap: 1rem;
       width: 95svw;
   }
 
-  .heading-option{
-    padding-right: 0;
+ 
+  .heading{
+    padding: 5px;
     text-align: center;
   }
+
+  .next-appointment{
+    text-wrap: nowrap;
+  }
+
+  .heading-option{
+    text-align: center;
+  }
+
+
   .option{
     font-size: 1rem;
     text-align: center;
@@ -652,44 +670,40 @@ ul.breadcrumb li a:hover {
   .userListJs li{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-column-gap: .2rem;
-    padding: 0;
   }
 
 
 
   .pat-status{
     font-size: .8rem;
-    width: 0px;
+    width: 100px !important;
     height: 30px;
     padding: 0 !important;
   }
  
-  .userDataItem p{
-    font-size: 1rem;
-    padding-right: .2rem;
-    font-weight: 600;
-  }
-
-  .userDataItem{
-    text-align: center;
+   .userDataItem{
+    text-align: left;
     line-height: 1rem;
   }
+
+  .numbers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .2rem;
+  }
+
+ 
   
   .pat-count{
-    margin-right:5rem;
+    margin-right:7rem;
+    text-wrap: nowrap;
   }
 
   .fa-bars{
     margin-left: -2rem !important;
   }
   
-
-  /* .list-container {
-    width: 100%;
-    border: 1px solid red;
-    overflow-y: auto;
-  } */
  
 
 }

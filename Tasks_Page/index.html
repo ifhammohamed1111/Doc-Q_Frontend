@@ -17,7 +17,7 @@
         <nav class="navbar">
             <div class="logo_container">
                 <div class="logo">
-                    <img src="./assets/MainLogo-transperent.png" alt=""/>
+                    <img src="./assets/MainLogo-transperent.png" alt="" />
                 </div>
             </div>
             <div class="nav_items">
@@ -131,11 +131,18 @@
                 <div class="tasks_container">
                     <div class="uncomplete_tasks">
                         <div class="uncomplete_task_menu">
-                            <h3>To be Completed</h3>
+                            <div class="task-count">
+                                <select>
+                                    <option value="">To be Completed</option>
+                                </select>
+                            <h3>1</h3>
+
+                            </div>
                             <div class="uncomplete_task_icon">
                                 <i class="fa-solid fa-plus"></i>
                                 <i class="fa-solid fa-filter"></i>
                                 <i class="fa-regular fa-circle-question"></i>
+                               
                             </div>
 
 
@@ -147,13 +154,18 @@
                             </div>
                             <hr>
                             <div class="info-content">
+                                <div class="check-task-parent">
+                                <div class="check-task">
                                 <input type="checkbox" id="check">
-                                <div>
                                     <p>Set up afternoon meeting</p>
+                                </div>
+                                <div class="task-date">
+                                <input type="checkbox" id="check">
                                     <p>25 Oct 2023</p>
                                 </div>
+                            </div>
                                 <div class="icon-dot">
-
+                                   ...
                                 </div>
                             </div>
 
