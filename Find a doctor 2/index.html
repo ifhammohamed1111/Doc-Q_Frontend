@@ -14,31 +14,48 @@
     <div class="outerConatiner">
 
         <!-- Navbar -->
-        <div class="top">
-            <div class="logo">
-                <img src="./Images/MainLogo-transperent.png"  />
-                
-            </div>
-            <div class="menuContainer">
-                <ul>
-                    <li><a href="./home.html">Home</a></li>
-                    <li><a href="./services.html">Our Services</a></li>
-                    <li><a href="./findDoctors.html" style="color:#5284B5 ;">Find Doctors</a></li>
-                    <li><a href="./register.html">Login\Register</a></li>
-                </ul>
-            </div>
-            <div class="searching">
-                <input placeholder="Searching" id="userSearch" />
-            </div>
-
-            <div class="hamburgerIcon">
-
-                <a> <i class="fa fa-bars" style="font-size:18px" onclick="handleMenu()"></i></a>
-                <div id="setIcons" style="margin-top: 0.5px;">
-
-                </div>
-            </div>
+             <!-- common Navbar in every Page -->
+      
+    <nav class="top">
+        <div class="logo">
+          <img src="./Images/MainLogo-transperent.png" />
         </div>
+        <div class="menuContainer">
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./services.html">Our Services</a></li>
+            <li>
+              <a href="./findDoctors.html">Find Doctors</a>
+            </li>
+            <li><a href="./register.html">Login\Register</a></li>
+          </ul>
+        </div>
+        <div class="searching">
+          <input placeholder="Search" />
+        </div>
+  
+        <div class="hamburgerIcon">
+          <div class="menu">
+            <a>
+              <i class="fa fa-bars"  onclick="handleMenu()"></i></a>
+          </div>
+  
+          <div id="setIcons">
+            <div class="mobileMenu">
+              <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./services.html">Our Services</a></li>
+                <li>
+                  <a href="./findDoctors.html">Find Doctors</a>
+                </li>
+                <li><a href="./register.html">Login\Register</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+  
+    <!-- common Navbar in every Page -->
 
         <!-- Main Page -->
         <div class="bottom">
