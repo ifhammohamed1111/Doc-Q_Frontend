@@ -636,6 +636,12 @@ ul.breadcrumb li a:hover {
   }
   
 
+  .userDataItem{
+    text-align: left;
+    line-height: 1rem;
+  }
+
+
 
 
 }
