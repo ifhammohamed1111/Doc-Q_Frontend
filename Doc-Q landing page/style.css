@@ -190,10 +190,7 @@ ul li:nth-child(1) a {
   padding-top: 4rem;
   position: relative;
 }
-.middleBottom {
-  /* border: 1px solid green; */
-  /* border: 1px solid pink; */
-}
+
 
 #leftWave {
   width: 60%;
@@ -228,9 +225,7 @@ ul li:nth-child(1) a {
   margin-top: 3rem;
   background-color: var(--background-color);
 }
-.leftrightmainContainer {
-  /* border: 1px solid red;  */
-}
+
 
 #dtimg {
   position: absolute;
