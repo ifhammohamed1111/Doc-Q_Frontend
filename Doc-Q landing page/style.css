@@ -4,10 +4,8 @@
   box-sizing: border-box;
 }
 
-.outerContainer {
-  width: 100svw;
-  min-height: 100vh;
-}
+
+/* <!-- common Navbar in every Page --> */
 
 
 .top {
@@ -21,8 +19,8 @@
   padding-right: 3%;
   background-color:#fefefe;
 }
+
 .logo {
-  display: flex;
   align-items: center;
   width: 100px;
   
@@ -80,11 +78,7 @@ ul li:nth-child(1) a{
 
 /* ----------navbar for mobile screen-------- */
 @media screen and (min-width: 200px) and (max-width: 420px) {
-.logo {
-  display: flex;
-  align-items: center;
-  width: 80px;  
-}
+
 
 .menuContainer {
     display: none;
@@ -128,14 +122,11 @@ ul li:nth-child(1) a{
   }
 
 
+
 }
 /* ----------navbar for tablet screen-------- */
 @media screen and (min-width: 421px) and (max-width: 900px) {
-  .logo {
-    display: flex;
-    align-items: center;
-    width: 80px;  
-  }
+
   
   .menuContainer {
     display: none;
@@ -182,6 +173,13 @@ ul li:nth-child(1) a{
 
   
 }
+
+
+
+
+
+ /* Navbar end here  */
+
 
 
     /* main page css */

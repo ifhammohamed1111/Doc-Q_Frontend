@@ -33,6 +33,8 @@ body {
     margin: 0;
     z-index: 10;
     padding: 30px 45px;
+    width: 30%;
+    /* border: 1px solid red; */
 }
 
 #wrp{
@@ -42,6 +44,9 @@ body {
     transform: translate(-50%, -50%);
 }
 
+#wrp h1{
+    text-align: center;
+}
 .formwrp {
     padding: 0;
     border-bottom: 1px solid var(--grey);
@@ -97,3 +102,21 @@ select:focus {
     cursor: pointer;
 }
 /*Button ENd*/
+
+
+@media only screen and (max-width: 767px) {
+    /* CSS rules for mobile devices */
+    
+#container {
+width: 100%;
+}
+
+  }
+  
+  /* Tablet Devices */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* CSS rules for tablet devices */
+    #container {
+        width: 60%;
+        }
+  }
