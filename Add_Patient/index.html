@@ -11,12 +11,11 @@
 </head>
 
 <body>
-
     <header>
         <nav class="navbar">
             <div class="logo_container">
                 <div class="logo">
-                    <img src="./assets/MainLogo-transperent.png" alt=""/>
+                    <img src="./assets/MainLogo-transperent.png" alt="" />
                 </div>
             </div>
             <div class="nav_items">
@@ -37,7 +36,6 @@
                     <i class="fa-regular fa-envelope fa-2x"></i>
                     <i class="fa-regular fa-bell fa-2x"></i>
                     <i class="fa-solid fa-arrow-right-from-bracket fa-2x"></i>
-
                 </div>
             </div>
 
@@ -48,7 +46,7 @@
             <div class="sidebar">
                 <p>menu</p>
                 <ul>
-                    <li class="sidebar_item  "><a href="#" class="sidenav_link ">
+                    <li class="sidebar_item  "><a href="#" class="sidenav_link active">
                             <div>
                                 <i class="fa-solid fa-chart-pie fa-2x"></i>
                             </div>
@@ -68,7 +66,7 @@
                             <p>Tasks</p>
                         </a>
                     </li>
-                    <li class="sidebar_item"><a href="#" class="sidenav_link active">
+                    <li class="sidebar_item"><a href="#" class="sidenav_link">
                             <div>
                                 <i class="fa-solid fa-user-group fa-2x"></i>
                             </div>
@@ -120,70 +118,96 @@
                 </div>
             </div>
             <div class="main-container">
-
-                <div class="mainTopSection">
-                    <ul class="breadcrumb">
-                        <li><a href="#">Patient register</a></li>
-                        <li><a href="#">Add Patient</a></li>
-                    </ul>
-                    <div class="cancelSavebtnconatiner">
-                          <div class="btnConatiner">
-                            <h3>Add New Patient</h3>
-                            <div class="bothbtn">
-                              <button id="cancell">Cancel</button>
-                              <button id="savv">Save</button>
-                            </div>
-                          </div>
-                    </div> 
-                </div>
-                <div class="mainFormSection">
-                <form id="formContainer">
-                 <div>
-                    <label id="record">Record number</label>
-                    <div id="mydiv">
-                        <p>Record number will be assigned automatically when you save.</p>
-                     <p id="mypara">Assign manually</p>
+                <div class="form-parent">
+                    <div class="dashboard-heading">
+                        <p>
+                            Patient register > Add patient
+                        </p>
                     </div>
-                 </div>
-                 <div id="fName">
-                    <label>Forename</label>
-                    <input type="text"/>
-                 </div>
-                 <div id="SName">
-                    <label>SurName</label>
-                    <input type="text"/>
-                 </div>
-                 <div id="Dob">
-                    <label>Date Of Birth</label>
-                    <input type="date">
-                 </div>
-                 <div id="sex">
-                    <label>Sex</label>
-                    <button id="male">Male</button>
-                    <button id="femalee">Female</button>
-                 </div>
-                 <div id="diaganosis">
-                    <label>Diagnosis</label>
-                    <input type="text"/>
-                 </div>
-                 <div id="notes">
-                    <label>Notes</label>
-                    <input type="text" id="notesInput"/>
-                 </div>
-                 <div id="phoneNo">
-                    <label>Phone number</label>
-                    <input type="number"/>
-                 </div>
-                </form>
+                    <div class="add-patient-action-container">
+                        <div class="add-patient-action">
+                            <div>
+                                <h3>Add New Patient</h3>
+                            </div>
+                            <div class="action-buttons">
+                                <button class="btn-cancel">Cancel</button>
+                                <button class="btn-save">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-container">
+                        <form class="main-form">
+                            <div class="inputs-parent" id="style-2">
+                                <div class="manually">
+                                    <div class="manually-left">
+                                        <p>Record number</p>
+                                    </div>
+                                    <div class="manually-right">
+                                        <p>Record number will be assigned automatically when you save.</p>
+                                        <button>Assign manually</button>
+                                    </div>
+                                </div>
+                                <div class="manually">
+                                    <div class="manually-left">
+                                        <p>Forename</p>
+                                    </div>
+                                    <div class="manually-right"><input type="text" /> </div>
+                                </div>
+                                <div class="manually">
+                                    <div class="manually-left">
+                                        <p>Surname</p>
+                                    </div>
+                                    <div class="manually-right"><input type="text" /> </div>
+                                </div>
+                                <div class="manually">
+                                    <div class="manually-left">
+                                        <p>Date of birth</p>
+                                    </div>
+                                    <div class="manually-right manually-date"><img src="./assets/uil_calender.svg" />
+                                        <input type="text" /> </div>
+                                </div>
+                                <div class="manually">
+                                    <div class="manually-left">
+                                        <p>Sex</p>
+                                    </div>
+                                    <div class="manually-right right-actions"> <button>Male</button>
+                                        <button>Female</button> </div>
+                                </div>
+                                <div class="manually">
+                                    <div class="manually-left">
+                                        <p>Diagnosis</p>
+                                    </div>
+                                    <div class="manually-right"><input type="text" /> </div>
+                                </div>
+                                <div class="manually">
+                                    <div class="manually-left">
+                                        <p>Notes</p>
+                                    </div>
+                                    <div class="manually-right">
+                                        <textarea id="myTextarea" rows="6" cols="50">
+
+                        </textarea>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="manually">
+                                    <div class="manually-left">
+                                        <p>Phone number</p>
+                                    </div>
+                                    <div class="manually-right"><input type="text" /> </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
 
-        </div>
-
-
+            <!-- this is table -->
     </header>
 
     <script src="./js/index.js""></script>
+ 
 </body>
 
 </html>
