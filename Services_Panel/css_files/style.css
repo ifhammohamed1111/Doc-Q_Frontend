@@ -5,22 +5,22 @@ body {
   font-family: "Encode Sans", sans-serif;
   /* position: relative; */
   /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
-  /* background-color: #f0f0f5; */
+  background-color: #F6FBFF;
 }
 .banner-container {
   margin-left: auto;
   margin-right: auto;
   max-width: 1220px;
-  /* max-height: 340px; */
-  background-color: #1c298c;
+  height: 400px;
+  background-color: #5284b5;
   border-radius: 20px;
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
 }
 .banner-logo {
-  height: 24px;
-  width: 127px;
+  height: 70px;
+  width: 70px;
   padding-top: 36px;
   padding-left: 50px;
 }
@@ -39,20 +39,28 @@ body {
   line-height: 1.5;
   color: white;
 }
+.banner-heading h1{
+  font-size: 30px;
+  font-weight: 600;
+}
+.banner-heading p{
+  font-size: 20px;
+  font-weight: 400;
+}
 .contact-container {
-  width: 48%;
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  border: 2px solid white;
-  padding: 5px 10px 5px 15px;
-  font-size: 15px;
-  text-align: center;
-  align-items: center;
-  line-height: 0;
-  border-radius: 5px;
-  font-weight: normal;
-  margin-top: 18px;
+  width: 73%;
+    display: flex;
+    flex-direction: row;
+    gap: 23px;
+    border: 2px solid white;
+    padding: 13px 31px 13px 30px;
+        font-size: 18px;
+    text-align: center;
+    align-items: center;
+    line-height: 0;
+    border-radius: 17px;
+    font-weight: normal;
+    margin: 18px 0;
   /* justify-content: space-between; */
 }
 #mobile-logo {
@@ -74,6 +82,7 @@ body {
   align-items: center;
   width: 43%;
   /* border: 1px solid black; */
+  border-radius: 50%;
 }
 .banner-img img {
   width: 100%;
@@ -86,7 +95,7 @@ body {
   margin-right: auto;
   padding: 0 clamp(15px,5%,60px);
   max-width: 1220px;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
 }
 .surgeries-main-container {
   display: flex;
@@ -95,15 +104,15 @@ body {
 }
 
 .surgeries-container {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
 
   width: 60%;
   /* border: 1px solid black; */
   margin-top: 20px;
 }
 .surgeries-heading {
-  margin: 5px 0 44px 0;
-  font-size: 17px;
+  margin: 5px 0 25px 0;
+  font-size: 23px;
 }
 .single-surgery img {
   height: 52px;
@@ -130,8 +139,8 @@ body {
 .surgeries-card {
   padding: 30px;
 
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
 }
 /* ///////////////////////////////FORM//////////////////////////////// */
 .form-main-container {
@@ -323,14 +332,16 @@ body {
   text-align: center;
 }
 .book-foem-wrapper .appintment-btn {
-  background: #28328c;
-  border-radius: 8px;
+  background: #5284B5;
+  border-radius: 22px;
   color: #fff;
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 700;
   padding: 12px;
   width: 100%;
   cursor: pointer;
+  border: none;
+  letter-spacing: 1.5px;
 }
 
 .blue-text {
@@ -488,4 +499,46 @@ body {
   font-size: 14px;
   height: 30px;
   line-height: 20px;
+}
+.single-allinment{
+}
+.single-allinment{
+  max-width: 700px;
+  height: 120px;
+  border:2px solid #5284B5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 30px;
+  padding-bottom: 0;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  background-color: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.allinment-img-container{
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  left: 24px;
+  top: 13%;
+}
+.allinment-img-container img{
+height: 100%;
+width: 100%;
+}
+.allinment-content{
+  position: absolute;
+  top: -3px;
+  left: 22%;
+}
+.allinment-heading h1{
+  font-size: 29px;
+font-weight: 500;
+}
+.allinment-text p{
+font-weight: 400;
+line-height: 24px;
 }

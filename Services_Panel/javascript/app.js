@@ -12,7 +12,7 @@ surgeres_data.map((item) => {
     </div>`
 
 })
-document.getElementById('surgires-list').innerHTML = listData
+// document.getElementById('surgires-list').innerHTML = listData
 let deptData = ''
 dept_data.map((item) => {
     deptData += ` <div class="single-specalist">
