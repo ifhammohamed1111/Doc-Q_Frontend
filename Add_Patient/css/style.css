@@ -13,12 +13,11 @@
   font-style: normal;
 }
 
-body {
-  max-width: 1440px;
-  max-height: 875px;
+header{
+  overflow: hidden;
 }
 
- 
+
 .navbar {
   /* width: 100%; */
   height: 80px;
@@ -29,6 +28,7 @@ body {
   position: sticky;
   top: 0;
 }
+
 
 
 .logo {
@@ -127,12 +127,12 @@ i:hover {
 .sidebar {
   background-color: #fff;
   width: 20vw;
-  height: 90vh;
+  height: 92vh;
   padding: 20px 0;
   box-shadow: 3px 3px 5px #e0e0e0;
   position: fixed;
   /* top: 14%; */
-  /* left: 0; */
+  /* left: 0; */  
 }
 .sidebar > p {
   /* margin-top: 20px; */
@@ -193,426 +193,173 @@ i:hover {
   color: #e0e0e0;
 }
 
-
-
-/* breadcrumb */
-ul.breadcrumb {
-  margin-left: 30px;
-  padding: 10px 16px;
-  list-style: none;
-  /* background-color: #eee; */
-}
-ul.breadcrumb li {
-  display: inline;
-  font-size: 18px;
-}
-ul.breadcrumb li + li:before {
-  padding: 8px;
-  color: black;
-  /* content: "/\00a0"; */
-  content: ">";
-}
-ul.breadcrumb li a {
-  color: #000;
-  text-decoration: none;
-}
-ul.breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
-}
-
 .main-container {
-  
+  background-color: #f9f9f9;
   width: 80vw;
+  height: 91svh;
   margin: 0 0 0 auto;
-  height: 80vh;
-  position: relative;
-  background-color: #e0e0e0;
-  
 }
-
-.mainTopSection{
+.form-parent{
   width: 100%;
-  /* border: 2px solid green; */
-  height: 17%;
-  position: fixed;
-  
- }
-.mainTopSection .breadcrumb{
-position: fixed;
-/* border: 2px solid black; */
-width: 100%;
-height: 7%;
-}
-
-.mainTopSection .cancelSavebtnconatiner{
-  width: 100%;
-  height: 60%;
-  /* background-color: #e0e0e0; */
-  position: absolute;
-  top: 45px;
- 
- }
- .btnConatiner{
-  width: 77%;
   height: 100%;
-  /* border: 2px solid red; */
-  margin-left: 29px;
-  background-color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
- }
- .btnConatiner h3{
-  padding-left: 20px;
- }
- .bothbtn button {
-    
-  
- }
- #cancell {
-  position: relative;
-  width: 60px;
-  height: 30px;
-  right: 40px;
-  background: #fff ;
-  color: #0000AC;
-  border-color: #0000AC;
-  border-radius: 5px;
- }
- #savv {
-  position: relative;
-  width: 60px;
-  height: 30px;
-  right: 30px;
-  background: #0000AC;
-  color: #fff;
-  border-color: #0000AC;
-  border-radius: 5px;
- }
-/* Form styles */
-
-
-.mainFormSection {
-  width: 100%;
-  height: 120vh;
-  background-color: #e0e0e0;
- 
-  position: relative;
-  margin-top: 160px;
-  display: flex;
-  justify-content: center;
-  
-
-}
-#formContainer{
- 
-  height: auto;
-  left: 100px;
-   
-  background-color: white;
-  position: absolute;
-  right: 100px;
-  
-}
-#formContainer div{
-  display: flex;
-  justify-content: space-between;
-padding: 20px;
-
-
-}
-#formContainer div label{
-  color: gray;
-}
-#formContainer div input{
-  width: 450px;
-  position: relative;
-  right:30px ;
-  border-color: gray;
-  outline: none;
-  border-radius: 5px;
-  height: 40px;
-}
- 
-#notes #notesInput{
-  height: 80px;
-}
-#formContainer div #mydiv{
-  position: relative;
-  right: 50px;
-  bottom: 40px;
-}
-#record{
-  position: relative;
-  top: 25px;
-}
-#mydiv{
   display: flex;
   flex-direction: column;
-  position: relative;
-  top: 3px;
-}
-#mydiv p{
-  color: gray;
-}
-#mydiv #mypara{
-  border: 2px solid gray;
-  width: 160px;
-  padding: 0px 20px;
-}
-#sex{
-  display: flex;
-  justify-content: space-evenly;
-}
-#sex button{
-  width: 60px;
-  
-}
-#male{
-  position: relative;
-  right: 5px;
-}
-#femalee{
-  position: relative;
-  right: 320px
-  
-}
-
-@media screen and (min-width:801px) and (max-width:992px){
-  .mainFormSection {
-    width: 100%;
-    height: 80vh;
-    background-color: #e0e0e0;
-   
-    position: relative;
-    margin-top: 160px;
-    display: flex;
-    justify-content: center;
-    
-  
-  }
-  .cancelSavebtnconatiner{
-    position: relative;
-    right: 30px;
-    padding: 0px 40px;
-  }
-  #formContainer{
-    width: 610px;
-    background-color: white;
-    position: relative;
-     margin-right: 200px;
- 
-   top:40px;
-   height: auto;
-  }
-  #formContainer div{
-    display: flex;
-    justify-content: space-between;
-}
-#formContainer div input{
-  width: 180px;
-  position: relative;
-  right:7px ;
-  border-color: gray;
-  outline: none;
-  border-radius: 5px;
-  height: 50px;
+  justify-content:flex-start;
   align-items: center;
 }
-#sex button{
-  width:70px;
+
+.dashboard-heading{
+  padding: 2rem;
+  width: 100%;
 }
-#sex #male{
-  position: relative;
-   left:80px
+
+.add-patient-action-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
-#sex #femalee{
-  position: relative;
-   right:10px;
-}
-#record{
-  position: relative;
-  top: 20px;
-}
-#mydiv{
+
+
+.add-patient-action{
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
- position: relative;
-   left: 120px;
-  top:0px
-    
-}
-#mypara{
-  position: relative;
-  top: 10px;
-  left: 20px;
-  height: 40px;
-}
-  
-}
-@media screen and (min-width:421px) and (max-width:800px){
-  
-  .mainFormSection {
-    width: 100%;
-    height: 90vh;
-    background-color: #e0e0e0;
-    padding-top: 40px;
-    position: relative;
-   
-    display: flex;
-    justify-content: center;
-    
-  
-  }
-
-  #formContainer{
-    width: 525px;
-    background-color: white;
-   position: relative;
-   left: 1px;
-   bottom: 40px;
-   top:5px;
-   height: auto;
-  
-  }
-  .cancelSavebtnconatiner{
-    
-    position: relative;
-    right: 30px;
-    padding: 0px 40px;
-    
-  }
-  #formContainer div{
-    display: flex;
-    justify-content: space-between;
-}
-#formContainer div input{
-  width: 200px;
-  position: relative;
-  right:7px ;
-  border-color: gray;
-  outline: none;
+  align-items: center;
+  width: 92%;
+  padding: 1.5rem;
   border-radius: 5px;
-  height: 50px;
+}
+
+.action-buttons button{
+  border: none;
+  background: none;
+  font-size: medium;
+  border-radius: 4px;
+  margin: 0 .2rem;
+  cursor: pointer;
+}
+
+.btn-cancel{
+  border: 1px solid #0000AC !important;
+  color: #0000AC;
+  padding: .3rem .6rem;
+
+}
+
+.btn-save{
+  border: 1px solid #0000AC !important;
+  background: #0000AC !important;
+  color: white;
+  padding: .3rem 1rem;
+
+}
+.form-container{
+  width:100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-#sex button{
-  width:70px;
+
+.main-form{
+  width:60%;
+  background: #ffffff;
+  overflow:hidden;
+  height: 90%;
+  border: 1px solid green;
 }
-#sex #male{
-  position: relative;
-   left:100px
-}
-#sex #femalee{
-  position: relative;
-   right:10px;
-}
-#record{
-  position: relative;
-  top: 20px;
+.inputs-parent{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100%;
+  overflow-y:scroll;
 }
 
-#mydiv{
+#style-2::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #ffffff;
+}
+
+#style-2::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #ffffff;
+}
+
+#style-2::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #E0E0E0;
+}
+    /* Target the scrollbar track */
+ 
+
+
+
+
+.manually{
   display: flex;
   justify-content: space-between;
- position: relative;
-   left: 30px;
-  top:0px
-    
+  flex-wrap: wrap;
 }
-#mypara{
-  position: relative;
-   left: 150px;
-}
-.mainTopSection{
-  margin-bottom: 10px;
-}
+.manually-right button{
+   background: none;
+   border: 1px solid #E0E0E0;
+   padding: .5rem .5rem;
+   border-radius: 5px;
 }
 
+.manually-right{
+  width: 60%;
+}
+.manually-right input{
+  width: 70%;
+  padding:.5rem 2rem;
+  border: 1px solid #E0E0E0;
+  border-radius: 3px;
+  outline: none;
+}
 
-@media screen and (max-width:420px) {
-  .cancelSavebtnconatiner{
-    position: relative;
-    right: 30px;
-    padding: 0px 40px;
-  }
-  .btnConatiner{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-  }
-  .bothbtn{
-     display: flex;
-     justify-content: center;
-     padding-left: 75px;
-     padding-bottom: 20px;
-  
-  }
-  #formContainer{
-    width: 240px;
-    background-color: white;
-   position: relative;
-   left: 7px;
-   bottom: 40px;
-   top:5px;
-  }
-  .mainFormSection{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
-  }
-  #formContainer div{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  padding: 20px;
+.manually-right img{
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  padding: .5rem;
+  cursor: pointer;
+}
+.manually-date{
+  display: flex;
   align-items: center;
-  
-  
-  }
-  #formContainer div input{
-    width: 150px;
-    position: relative;
-    right:7px ;
-    border-color: gray;
-    outline: none;
-    border-radius: 5px;
-    height: 30px;
-    align-items: center;
-  }
-    
-  
-  #sex{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-  #femalee{
-    position: relative;
-    right: 5px;
-    top: 10px;
-    
-  }
-  #mydiv{
-    display: flex;
-    flex-direction: column;
-   position: relative;
-   left: 9px;
-   top: 20px;
-  }
- 
+  gap:.5rem;
+}
+.manually-date input{
+  width: 61%;
 }
 
+.right-actions button{
+   border: none;
+   padding: .5rem .7rem;
+   background: #E0E0E0;
+   margin: 0 .3rem 0 0;
+}
+
+
+#myTextarea{
+   width: 70%;
+  border: 1px solid #E0E0E0;
+  outline: none;
+  resize: none;
+
+}
 /* media -queries */
 
 /* navbar */
 
 @media (max-width: 480px) {
-  .mainFormSection{
-    padding-top: 40px;
-  }
   .navbar {
     max-width: 480px;
     height: 60px;
@@ -625,18 +372,8 @@ padding: 20px;
     position: sticky;
     top: 0;
   }
-  .logo_container {
-    width: 100px;
-    height: 40px;
-  }
-  .logo {
-    /* max-width: 200px; */
-    text-align: center;
-    /* background: #000; */
-    font-size: 20px;
-    color: #2f80ed;
-    text-align: center;
-  }
+ 
+ 
 
   .nav_items {
     display: flex;
@@ -708,7 +445,28 @@ padding: 20px;
     display: none;
   }
 
- 
+  .calendar_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 30px;
+  }
+
+
+  .divider_bottom_1 {
+    width: 4rem;
+  
+  }
+  
+  .divider_bottom_2 {
+    width: 4rem;
+  
+  }
+  
+
+
+
 }
 @media (min-width: 480px) and (max-width: 768px) {
   .navbar {
@@ -722,18 +480,6 @@ padding: 20px;
     background-color: #fff;
     position: sticky;
     top: 0;
-  }
-  .logo_container {
-    width: 150px;
-    height: 40px;
-  }
-  .logo {
-    /* max-width: 200px; */
-    text-align: center;
-    /* background: #000; */
-    font-size: 20px;
-    color: #2f80ed;
-    text-align: center;
   }
 
   .nav_items {
@@ -795,9 +541,35 @@ padding: 20px;
   .sidenav_link p {
     display: none;
   }
-  .mainFormSection{
-    padding-top: 40px;
+
+  .calendar_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 30px;
   }
 
-   
+  .divider_bottom_1 {
+    width: 2rem;
+  
+  }
+  
+  .divider_bottom_2 {
+    width: 2rem;
+  
+  }
 }
+
+
+
+/* main container media queries  */
+
+
+
+
+
+
+
+
+/* main container media queries  */

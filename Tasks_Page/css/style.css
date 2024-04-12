@@ -639,6 +639,7 @@ ul.breadcrumb li a:hover {
     max-width: 200px;
     flex: 1;
     position: relative;
+    padding-left: 30px;
   }
   .nav_search > input {
     margin: 0 auto;
@@ -788,3 +789,12 @@ ul.breadcrumb li a:hover {
 
 
 }
+
+@media (min-width: 868px) and (max-width: 1440px) {
+
+  .nav_search {
+    max-width: 350px;
+    padding-left: 90px;
+  }
+}
+
