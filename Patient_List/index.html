@@ -11,13 +11,15 @@
 
 <body>
 
-    <header>
+    <header id="head">
         <nav class="navbar">
+            <div class="navbar-child">
+
+           
             <div class="logo_container">
                 <div class="logo">
                     <img src="./MainLogo-transperent.png" />
                 </div>
-            </div>
             </div>
             <div class="nav_items">
                 <div class="nav_search">
@@ -26,22 +28,24 @@
                         <button type="submit"><i class="fa-solid fa-magnifying-glass fa-2x"></i></button>
                     </form>
                 </div>
-                <div class="doc_info">
-                    <p>John Doe</p>
-                    <h5>General Doctor</h5>
+                <div class="right-info">
+                    <div class="doc_info">
+                        <p>John Doe</p>
+                        <h5>General Doctor</h5>
+                    </div>
+                    <div class="nav_date">
+                        <input type="date" name="" id="">
+                    </div>
+                    <div class="nav_menu_icons">
+                        <i class="fa-regular fa-envelope fa-2x"></i>
+                        <i class="fa-regular fa-bell fa-2x"></i>
+                        <i class="fa-solid fa-arrow-right-from-bracket fa-2x"></i>
+                    </div>
                 </div>
-                <div class="nav_date">
-                    <input type="date" name="" id="">
-                </div>
-                <div class="nav_menu_icons">
-                    <i class="fa-regular fa-envelope fa-2x"></i>
-                    <i class="fa-regular fa-bell fa-2x"></i>
-                    <i class="fa-solid fa-arrow-right-from-bracket fa-2x"></i>
-
-                </div>
+                
             </div>
 
-
+        </div>
         </nav>
 
         <div class="hero_section">
@@ -142,7 +146,7 @@
                     <div id="userList1">
                         <ul class="userListJs">
                             <li class="heading">
-                                <span>Name</span>
+                                <span> Name</span>
                                 <span>Diagnosis</span>
                                 <span>Status</span>
                                 <span >Last Appointment</span>

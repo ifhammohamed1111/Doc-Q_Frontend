@@ -5,88 +5,194 @@
     }
     .outerConatiner {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /* border: 2px solid red; */
     }
-    .top {
-    width: 100%;
+
+
+
+
+/* <!-- common Navbar in every Page --> */
+.top {
+    width: 96%;
     height: 12vh;
-    /* border: 2px solid pink; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     padding-right: 3%;
-
-    }
-    .logo {
-      width: 100px;
-    }
-
-   .logo img{
-     object-fit: cover;
-     width: 100%;
-   }
- 
-    .menuContainer ul {
+    background-color:#fefefe;
+  }
+  
+  .logo {
+    align-items: center;
+    width: 100px;
+    
+  }
+  .logo img{
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  
+  .menuContainer ul {
     display: flex;
     margin-left: 20px;
     justify-content: center;
     align-items: center;
     list-style: none;
-    }
-    ul li a {
+  }
+  ul li a {
     text-decoration: none;
     color: gray;
     text-decoration-line: line-through;
-    }
-    .menuContainer ul li {
+  }
+  
+  ul li:nth-child(3) a{
+    text-decoration: none;
+    color: #015db9;
+    text-decoration-line: none;
+  }
+  
+  .menuContainer ul li {
     margin-left: 40px;
-    }
-    .searching input {
+  }
+  .searching input {
     width: 300px;
     height: 30px;
+    border: 1px solid #bbbbbb;
     border-radius: 30px;
     align-items: center;
-    color: gray;
+    color: #bbbbbb;
     text-decoration: none;
     padding-left: 15px;
+  }
+  .hamburgerIcon {
+    display: none;
+  }
+  
+  #setIcons{
+    display: none;
+  }
+  
+  
+  
+  
+  
+  
+  /* ----------navbar for mobile screen-------- */
+  @media screen and (min-width: 200px) and (max-width: 420px) {
+ 
+  
+  .menuContainer {
+      display: none;
+    }
+    .menuContainer ul {
+      display: none;
+    }
+    .searching {
+      display: none;
     }
     .hamburgerIcon {
-    display: none;
-    }
+      display: block;
+      position: relative;
 
-    /* ----------navbar for mobile screen-------- */
-    @media screen and (min-width: 200px) and (max-width: 420px) {
+    }
+  
+    #setIcons {
+      position: absolute;
+      top: 2rem;
+      width: 105svw;
+      height: 50svh;
+      right: -1rem;
+      z-index: 100;
+
+    }
+  
+    .mobileMenu ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      list-style-type: none;
+      gap: 0.5rem;
+      font-size: 1.2rem;
+      text-align: center;
+      background: #fffefe98;
+      -webkit-backdrop-filter: blur(50px);
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    .mobileMenu ul li {
+      padding: 12px;
+    }
+  
+  
+  }
+  /* ----------navbar for tablet screen-------- */
+  @media screen and (min-width: 421px) and (max-width: 900px) {
+  
+    
     .menuContainer {
-    display: none;
+      display: none;
     }
     .menuContainer ul {
-    display: none;
+      display: none;
     }
     .searching {
-    display: none;
+      display: block;
+      /* width:10px; */
     }
+  
     .hamburgerIcon {
-    display: block;
+      display: block;
+      position: relative;
     }
+  
+    #setIcons {
+      position: absolute;
+      top: 3rem;
+      width: 105svw;
+      height: 50svh;
+      right: -1.8rem;
+      z-index: 100;
     }
-    /* ----------navbar for tablet screen-------- */
-    @media screen and (min-width: 421px) and (max-width: 768px) {
-    .menuContainer {
-    display: none;
+  
+    .mobileMenu ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      list-style-type: none;
+      gap: 1rem;
+      font-size: 1.2rem;
+      text-align: center;
+      background: #fffefe98;
+      -webkit-backdrop-filter: blur(30px);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
     }
-    .menuContainer ul {
-    display: none;
+    .mobileMenu ul li {
+      padding: 12px;
     }
-    .searching {
-    display: block;
-    /* width:10px; */
-    }
-    .hamburgerIcon {
-    display: block;
-    }
-    }
+  
+    
+  }
+  
+
+
+/* <!-- common Navbar in every Page --> */
+
+   
+
+
+
+
 
     /* main page css */
 

@@ -267,14 +267,22 @@ i:hover {
   background: #ffffff;
   overflow:hidden;
   height: 90%;
+<<<<<<< HEAD
   /* border: 1px solid green; */
+=======
+  border: 1px solid green;
+>>>>>>> 624a83782e157ecdf4f50271c3773b78e6ff665e
 }
 .inputs-parent{
   padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+<<<<<<< HEAD
   height: 75%;
+=======
+  height: 100%;
+>>>>>>> 624a83782e157ecdf4f50271c3773b78e6ff665e
   overflow-y:scroll;
 }
 
@@ -562,6 +570,7 @@ i:hover {
   }
 }
 
+<<<<<<< HEAD
 @media only screen and (min-width: 421px) and (max-width: 768px) {
   .inputs-parent {
     height: 40%;
@@ -632,6 +641,11 @@ i:hover {
 /* CSS rules for devices with screen width between 800px and 1280px */
 }
 
+=======
+
+
+/* main container media queries  */
+>>>>>>> 624a83782e157ecdf4f50271c3773b78e6ff665e
 
 
 

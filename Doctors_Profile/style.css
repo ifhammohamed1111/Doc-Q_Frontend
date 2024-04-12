@@ -106,8 +106,9 @@ ul li:nth-child(3) a {
 }
 .doctor-info {
   border-right: 1px solid gray;
-  min-height: 88svh;
+  /* min-height: 88svh; */
   width: 60vw;
+  min-height: 90vh;
   padding-top: 2rem;
 }
 .doctor-details {
@@ -224,7 +225,7 @@ ul li:nth-child(3) a {
   align-items: center;
   gap: 2rem;
   width: 90%;
-  min-height: 70svh;
+  /* min-height: 70svh; */
   border-radius: 10px;
   /* font-size: 1.3rem; */
   padding: 1rem 0;
@@ -383,7 +384,9 @@ ul li:nth-child(3) a {
   .info-text {
     width: 100%;
   }
-
+  .location-info{
+    align-items: center;
+      }
   .appointment-container {
     margin-top: 4rem;
     width: 100svw;
@@ -466,6 +469,10 @@ ul li:nth-child(3) a {
   .info-text {
     width: 100%;
   }
+  .location-info{
+align-items: center;
+  }
+
 
   .appointment-container {
     margin-top: 4rem;
@@ -474,6 +481,11 @@ ul li:nth-child(3) a {
   }
   .divider {
     display: none;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 900px) {
+  .time-slots{
+    gap: 3rem;
   }
 }
 /* laptop */
