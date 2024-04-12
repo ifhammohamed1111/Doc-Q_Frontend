@@ -267,22 +267,14 @@ i:hover {
   background: #ffffff;
   overflow:hidden;
   height: 90%;
-<<<<<<< HEAD
   /* border: 1px solid green; */
-=======
-  border: 1px solid green;
->>>>>>> 624a83782e157ecdf4f50271c3773b78e6ff665e
 }
 .inputs-parent{
   padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-<<<<<<< HEAD
   height: 75%;
-=======
-  height: 100%;
->>>>>>> 624a83782e157ecdf4f50271c3773b78e6ff665e
   overflow-y:scroll;
 }
 
@@ -367,210 +359,6 @@ i:hover {
 
 /* navbar */
 
-@media (max-width: 480px) {
-  .navbar {
-    max-width: 480px;
-    height: 60px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 5px 5px 10px #e0e0e0;
-    background-color: #fff;
-    position: sticky;
-    top: 0;
-  }
- 
- 
-
-  .nav_items {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    /* gap: 40px; */
-    color: #828282;
-  }
-  .nav_search {
-    max-width: 150px;
-    flex: 1;
-    position: relative;
-  }
-  .nav_search form input {
-    margin-top: 5px;
-    height: 30px;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-    padding-left: 20px;
-  }
-  .nav_search input:focus {
-    outline: none;
-    border: 2px solid #e0e0e0;
-  }
-  .nav_search button {
-    background: transparent;
-  }
-  .nav_search i {
-    background: transparent;
-    font-size: 20px;
-    margin: 5px auto;
-    /* position: absolute;
-    top: 20%;
-    right: 2%; */
-  }
-  i:hover {
-    color: #2f80ed;
-    cursor: pointer;
-  }
-
-  .doc_info {
-    display: none;
-  }
-
-  .nav_date > input {
-    display: none;
-    background-color: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 4px;
-    padding: 5px 6px;
-  }
-  .nav_date > input:focus {
-    border: 1px solid #e0e0e0;
-    border-radius: 4px;
-  }
-  .nav_menu_icons {
-    display: flex;
-  }
-  .nav_menu_icons > i {
-    font-size: medium;
-    margin: 0 10px;
-  }
-  .sidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .sidenav_link p {
-    display: none;
-  }
-
-  .calendar_nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    padding: 10px 30px;
-  }
-
-
-  .divider_bottom_1 {
-    width: 4rem;
-  
-  }
-  
-  .divider_bottom_2 {
-    width: 4rem;
-  
-  }
-  
-
-
-
-}
-
-@media (min-width: 480px) and (max-width: 768px) {
-  .navbar {
-    max-width: 768px;
-    height: 60px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 5px 5px 10px #e0e0e0;
-    background-color: #fff;
-    position: sticky;
-    top: 0;
-  }
-
-  .nav_items {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    /* gap: 40px; */
-    color: #828282;
-  }
-  .nav_search {
-    max-width: 200px;
-    flex: 1;
-    position: relative;
-  }
-  .nav_search > input {
-    margin: 0 auto;
-    height: 30px;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-    padding-left: 20px;
-  }
-  .nav_search > input:focus {
-    outline: none;
-    border: 2px solid #e0e0e0;
-  }
-  .nav_search > i {
-    position: absolute;
-    top: 10%;
-    right: 2%;
-  }
-  i:hover {
-    color: #2f80ed;
-    cursor: pointer;
-  }
-
-  .doc_info {
-    display: block;
-  }
-
-  .nav_date > input {
-    display: none;
-    background-color: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 4px;
-    padding: 5px 6px;
-  }
-  .nav_date > input:focus {
-    border: 1px solid #e0e0e0;
-    border-radius: 4px;
-  }
-  .nav_menu_icons {
-    display: flex;
-  }
-  .nav_menu_icons > i {
-    font-size: medium;
-    margin: 0 10px;
-  }
-
-  .sidenav_link p {
-    display: none;
-  }
-
-  .calendar_nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    padding: 10px 30px;
-  }
-
-  .divider_bottom_1 {
-    width: 2rem;
-  
-  }
-  
-  .divider_bottom_2 {
-    width: 2rem;
-  
-  }
-}
-
-<<<<<<< HEAD
 @media only screen and (min-width: 421px) and (max-width: 768px) {
   .inputs-parent {
     height: 40%;
@@ -641,11 +429,8 @@ i:hover {
 /* CSS rules for devices with screen width between 800px and 1280px */
 }
 
-=======
-
 
 /* main container media queries  */
->>>>>>> 624a83782e157ecdf4f50271c3773b78e6ff665e
 
 
 
