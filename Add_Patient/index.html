@@ -140,7 +140,7 @@
                             <div class="inputs-parent" id="style-2">
                                 <div class="manually">
                                     <div class="manually-left">
-                                        <p>Record number</p>
+                                        <label>Record number</label>
                                     </div>
                                     <div class="manually-right">
                                         <p>Record number will be assigned automatically when you save.</p>
@@ -149,39 +149,39 @@
                                 </div>
                                 <div class="manually">
                                     <div class="manually-left">
-                                        <p>Forename</p>
+                                        <label>Forename</label>
                                     </div>
                                     <div class="manually-right"><input type="text" /> </div>
                                 </div>
                                 <div class="manually">
                                     <div class="manually-left">
-                                        <p>Surname</p>
+                                        <label>Surname</label>
                                     </div>
                                     <div class="manually-right"><input type="text" /> </div>
                                 </div>
                                 <div class="manually">
                                     <div class="manually-left">
-                                        <p>Date of birth</p>
+                                        <label for="birthdate">Date of birth</label>
                                     </div>
                                     <div class="manually-right manually-date"><img src="./assets/uil_calender.svg" />
-                                        <input type="text" /> </div>
+                                        <input type="date" id="birthdate" onchange="formatDate()" /> </div>
                                 </div>
                                 <div class="manually">
                                     <div class="manually-left">
-                                        <p>Sex</p>
+                                        <label>Sex</label>
                                     </div>
                                     <div class="manually-right right-actions"> <button>Male</button>
                                         <button>Female</button> </div>
                                 </div>
                                 <div class="manually">
                                     <div class="manually-left">
-                                        <p>Diagnosis</p>
+                                        <label>Diagnosis</label>
                                     </div>
                                     <div class="manually-right"><input type="text" /> </div>
                                 </div>
                                 <div class="manually">
                                     <div class="manually-left">
-                                        <p>Notes</p>
+                                        <label>Notes</label>
                                     </div>
                                     <div class="manually-right">
                                         <textarea id="myTextarea" rows="6" cols="50">
@@ -193,7 +193,7 @@
                                 
                                 <div class="manually">
                                     <div class="manually-left">
-                                        <p>Phone number</p>
+                                        <label>Phone number</label>
                                     </div>
                                     <div class="manually-right"><input type="text" /> </div>
                                 </div>

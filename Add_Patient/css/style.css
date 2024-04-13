@@ -266,16 +266,26 @@ i:hover {
   width:60%;
   background: #ffffff;
   overflow:hidden;
+<<<<<<< HEAD
   height: 95%;
   border: 1px solid green;
+=======
+  height: 90%;
+  /* border: 1px solid green; */
+>>>>>>> origin/group-four
 }
 .inputs-parent{
   padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+<<<<<<< HEAD
   height: 75%;
   overflow-y:auto;  
+=======
+  height: 70%;
+  overflow-y:scroll;
+>>>>>>> origin/group-four
 }
 
 #style-2::-webkit-scrollbar-track
@@ -319,7 +329,7 @@ i:hover {
 }
 .manually-right input{
   width: 70%;
-  padding:.5rem 2rem;
+  padding:.5rem .5rem;
   border: 1px solid #E0E0E0;
   border-radius: 3px;
   outline: none;
@@ -561,7 +571,75 @@ i:hover {
   }
 }
 
+@media only screen and (min-width: 421px) and (max-width: 768px) {
+  .inputs-parent {
+    height: 40%;
+  }
+  .add-patient-action{
+    /* flex-direction: column; */
+    padding:.5rem;
+  }
+  
+  .main-form{
+    width: 100%;
+    padding: 0;
+  }
 
+  .manually{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  
+  .manually-right{
+    width: 100%;
+  }
+
+
+  .manually input{
+    width: 100%;
+  }
+  
+  #myTextarea {
+    width: 100%;
+  }
+}
+
+@media only screen and  (max-width: 420px) {
+  .inputs-parent {
+    height: 40%;
+  }
+  .add-patient-action{
+    flex-direction: column;
+    padding:.5rem;
+  }
+  
+  .main-form{
+    width: 100%;
+    padding: 0;
+  }
+
+  .manually{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  
+  .manually-right{
+    width: 100%;
+  }
+
+
+  .manually input{
+    width: 100%;
+  }
+  
+  #myTextarea {
+    width: 100%;
+  }
+
+/* CSS rules for devices with screen width between 800px and 1280px */
+}
 
 /* main container media queries  */
 

@@ -119,6 +119,27 @@ function generateBreadCrumb() {
   ul.appendChild(li);
 }
 
+function formatDate() {
+  var inputDate = document.getElementById("birthdate").value;
+  if (inputDate) {
+      var dateObj = new Date(inputDate);
+      var day = dateObj.getDate();
+      var month = dateObj.getMonth() + 1; // Months are zero based
+      var year = dateObj.getFullYear();
+
+      // Pad day and month with leading zeros if needed
+      day = (day < 10) ? "0" + day : day;
+      month = (month < 10) ? "0" + month : month;
+
+      var formattedDate = formattedDay + "-" + formattedMonth + "-" + year;
+
+      // Update the input field with the formatted date
+      document.getElementById("birthdate").value = formattedDate;
+  }
+}
+
 generateCalendar();
 
 generateBreadCrumb();
+
+formatDate();
