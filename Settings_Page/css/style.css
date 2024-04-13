@@ -16,8 +16,8 @@
 }
 
 body {
-  max-width: 1440px;
-  max-height: 875px;
+  width: 100%;
+  height: 100%;
 }
 
 .navbar {
@@ -199,6 +199,7 @@ ul.breadcrumb li a:hover {
 
 .main-section {
   width: 100%;
+  min-height: 85vh;
   display: flex;
   align-items: flex-start;
   gap: 10px;
