@@ -8,7 +8,7 @@
 
 
  :root {
-  --background-color: #063360;
+  --background-color: #216cb8;
 }
 
 
@@ -26,6 +26,9 @@
   padding: 20px;
   padding-right: 3%;
   background-color: #fefefe;
+  position: sticky;
+  top:1px;
+  z-index: 1000;
 }
 
 .logo {
@@ -47,7 +50,7 @@
 ul li a {
   text-decoration: none;
   color: gray;
-  text-decoration-line: line-through;
+
 }
 
 ul li:nth-child(1) a {
@@ -223,6 +226,7 @@ ul li:nth-child(1) a {
   color: #ffffff;
   margin-left: 2rem;
   margin-top: 3rem;
+  border-radius: 5px;
   background-color: var(--background-color);
 }
 
@@ -640,7 +644,6 @@ ul li:nth-child(1) a {
 }
 
 #doc-feature {
-
   color: #e9f7f8;
   width: 100%;
   background-color: var(--background-color);
@@ -648,13 +651,9 @@ ul li:nth-child(1) a {
 .doc-main-container {
   padding: 2rem;
 }
-.doc-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-  gap: 2rem;
-}
+
+
+
 .feature-title {
   margin: 0 auto;
   width: 90%;
@@ -744,7 +743,7 @@ ul li:nth-child(1) a {
 }
 
 
-@media only screen and (min-width: 869px) and (max-width: 1280px) {
+@media only screen and (min-width: 869px) and (max-width: 1440px) {
 
   .doc-container{
      display: grid;
@@ -767,7 +766,22 @@ ul li:nth-child(1) a {
 
 }
 
+@media only screen and (min-width: 1080px) and (max-width: 1920px) {
+  .doc-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+ }
 
+
+
+
+
+
+
+}
 
 
 
@@ -1060,6 +1074,13 @@ ul li:nth-child(1) a {
   font-weight: 600;
   background-color: #5284b5;
 }
+
+
+.top-specialist-section{
+  margin-top: 2rem;
+}
+
+
 .arrow-frame-wrapper {
   position: relative;
 }

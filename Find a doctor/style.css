@@ -51,7 +51,7 @@ body{
   ul li a {
     text-decoration: none;
     color: gray;
-    text-decoration-line: line-through;
+    font-weight: 600;
   }
   
   ul li:nth-child(3) a{

@@ -266,7 +266,7 @@ i:hover {
   width:60%;
   background: #ffffff;
   overflow:hidden;
-  height: 90%;
+  height: 95%;
   border: 1px solid green;
 }
 .inputs-parent{
@@ -274,8 +274,8 @@ i:hover {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  height: 100%;
-  overflow-y:scroll;
+  height: 75%;
+  overflow-y:auto;  
 }
 
 #style-2::-webkit-scrollbar-track
@@ -566,6 +566,54 @@ i:hover {
 /* main container media queries  */
 
 
+@media only screen and (min-width: 800px) and (max-width: 1280px) {
+  /* CSS rules for devices with screen width between 800px and 1280px */
+
+}
+
+
+
+
+@media only screen and (min-width: 421px) and (max-width: 1280px) {
+  /* CSS rules for devices with screen width between 800px and 1280px */
+
+}
+
+
+
+
+
+
+
+@media only screen and  (max-width: 420px) {
+    .add-patient-action{
+      flex-direction: column;
+      padding:.5rem;
+    }
+    
+    .main-form{
+      width: 100%;
+      padding: 0;
+    }
+
+    .manually{
+      flex-direction: column;
+      width: 100%;
+    }
+
+    
+    .manually-right{
+      width: 100%;
+    }
+
+
+    .manually input{
+      width: 100%;
+    }
+
+
+  /* CSS rules for devices with screen width between 800px and 1280px */
+}
 
 
 
