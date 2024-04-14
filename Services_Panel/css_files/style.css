@@ -3,10 +3,97 @@ body {
   top: 0;
   box-sizing: border-box;
   font-family: "Encode Sans", sans-serif;
-  /* position: relative; */
-  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
   background-color: #F6FBFF;
 }
+
+/* Navigation bar starts from here  */
+
+.navbarContainer{
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.top {
+  width: 96%;
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.secondimg {
+  position: relative;
+  right: 10px;
+}
+
+.menuContainer ul {
+  display: flex;
+  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  color: gray;
+  font-weight: 600;
+}
+
+ul li:nth-child(2) a {
+  text-decoration: none;
+  color: #5284b5;
+  text-decoration-line: none;
+}
+
+ul li:nth-child(3) a {
+  text-decoration: none;
+  color: gray !important;
+  text-decoration-line: none;
+}
+
+.menuContainer ul li {
+  margin-left: 40px;
+}
+.searching input {
+  width: 300px;
+  height: 30px;
+  border: 1px solid #bbbbbb;
+  border-radius: 30px;
+  align-items: center;
+  color: #bbbbbb;
+  text-decoration: none;
+  padding-left: 15px;
+}
+.hamburgerIcon {
+  display: none;
+  margin-left:5px ;
+}
+
+#setIcons {
+  display: none;
+}
+
+/* Navigation bar ends here */
+
+
+
+
+
+
+
+
+
+
+
+
 .banner-container {
   margin-left: auto;
   margin-right: auto;

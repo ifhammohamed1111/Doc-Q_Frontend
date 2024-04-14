@@ -1,3 +1,100 @@
+
+/* ----------navbar for tablet screen-------- */
+@media screen and (min-width: 421px) and (max-width: 900px) {
+    .menuContainer {
+      display: none;
+    }
+    .menuContainer ul {
+      display: none;
+    }
+    .searching {
+      display: block;
+      /* width:10px; */
+    }
+  
+    .hamburgerIcon {
+      display: block;
+      position: relative;
+    }
+  
+    #setIcons {
+      position: absolute;
+      top: 3rem;
+      width: 100svw;
+      height: 50svh;
+      right: 0rem;
+      z-index: 100;
+    }
+  
+    .mobileMenu ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      list-style-type: none;
+      gap: 1rem;
+      font-size: 1.2rem;
+      text-align: center;
+      background: #fffefe98;
+      -webkit-backdrop-filter: blur(30px);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    .mobileMenu ul li {
+      padding: 12px;
+    }
+  }
+  
+  /* Navbar end here  */
+  
+/* ----------navbar for mobile screen-------- */
+@media screen and (min-width: 200px) and (max-width: 420px) {
+    .menuContainer {
+      display: none;
+    }
+    .menuContainer ul {
+      display: none;
+    }
+    .searching {
+      display: none;
+    }
+    .hamburgerIcon {
+      display: block;
+      position: relative;
+    }
+  
+    #setIcons {
+      position: absolute;
+      top: 2rem;
+      width: 100svw;
+      height: 50svh;
+      right: 0rem;
+      z-index: 100;
+    }
+  
+    .mobileMenu ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      list-style-type: none;
+      gap: 0.5rem;
+      font-size: 1.2rem;
+      text-align: center;
+      background: #fffefe98;
+      -webkit-backdrop-filter: blur(50px);
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    .mobileMenu ul li {
+      padding: 12px;
+    }
+  }
+
+
+
+
+
 @media (max-width:1024px) {
     .surgeries-main-container{
         flex-wrap: wrap;

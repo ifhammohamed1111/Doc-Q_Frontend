@@ -12,9 +12,60 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Encode+Sans:wght@100..900&family=Itim&family=Martian+Mono:wght@500&family=Sigmar&family=Source+Code+Pro:ital,wght@0,600;1,800&display=swap"
         rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
 </head>
 
 <body>
+
+            <!--------------------------------------------------- navbar starts here ----------------------------- ------------------------------------->
+ <div class="navbarContainer">
+       <div class="top">
+        <div class="logo">
+          <img src="./assets/images/MainLogo-transperent.png" width="100px"  />
+          
+        </div>
+        <div class="menuContainer">
+          <ul>
+            <li><a href="../Doc-Q landing page/index.html">Home</a></li>
+            <li><a href="../Services_Panel/index.html">Our Services</a></li>
+            <li>
+              <a href="../Find a doctor/" style="color: #5284b5"
+                >Find Doctors</a
+              >
+            </li>
+            <li><a href="../mustafa/register.html">Login\Register</a></li>
+          </ul>
+        </div>
+        <div class="searching">
+          <input placeholder="Search" />
+        </div>
+
+        <div class="hamburgerIcon">
+            <div class="menu">
+                    <i class="fa fa-bars"  onclick="handleMenu()"></i>
+            </div>
+
+          <div id="setIcons" >
+            <div class="mobileMenu">
+                <ul>
+                  <li><a href="../Doc-Q landing page/index.html">Home</a></li>
+                  <li><a href="../Services_Panel/index.html">Our Services</a></li>
+                  <li>
+                    <a href="../Find a doctor/index.html" style="color: #015db9"
+                      >Find Doctors</a
+                    >
+                  </li>
+                  <li><a href="../mustafa/register.html">Login\Register</a></li>
+                </ul>
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+       <!--------------------------------------------------- navbar ends here ----------------------------- ------------------------------------->
+
 
 
     <div class="banner-container">
@@ -489,6 +540,8 @@
         </div>
     </div> -->
     <script src="./javascript/app.js" type="module"></script>
+    <script src="./javascript/menu.js">
+    </script>
 </body>
 
 
