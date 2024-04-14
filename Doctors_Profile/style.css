@@ -49,7 +49,7 @@
 ul li a {
   text-decoration: none;
   color: gray;
-  text-decoration-line: line-through;
+ 
 }
 
 ul li:nth-child(3) a {
@@ -291,7 +291,7 @@ ul li:nth-child(3) a {
 }
 .green {
   font-size: 0.8rem;
-  color: green;
+  color: #01A400;
 }
 .light-text {
   font-size: 0.8rem;
@@ -304,15 +304,33 @@ ul li:nth-child(3) a {
   gap: 1rem;
   padding: 1rem;
 }
-.slot {
-  border: 1px solid #105cb3;
-  color: #105cb3;
-  padding: 0.5rem;
-  border-radius: 5px;
+
+.time-slot{
+  padding: 8px 1rem;
+  border: 2px solid #2F80ED;
+  color: #2F80ED;
+  background-color: white;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+}
+#book-btn{
+  padding: 8px 1rem;
+  border: 2px solid #2F80ED;
+  color: #2F80ED;
+  background-color: white;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.selected {
+  background-color:#2F80ED;
+  color: white;
+  border: 2px solid whitesmoke;
 }
 
 /* ----------navbar for mobile screen-------- */
-@media screen and (min-width: 200px) and (max-width: 420px) {
+@media screen and (min-width: 200px) and (max-width: 426px) {
   .wrapper {
     flex-wrap: wrap;
     text-align: center;
@@ -400,9 +418,12 @@ ul li:nth-child(3) a {
   .divider {
     display: none;
   }
+  .time-slot{
+    padding: 8px 4px;
+  }
 }
 /* ----------navbar for tablet screen-------- */
-@media screen and (min-width: 421px) and (max-width: 900px) {
+@media screen and (min-width: 426px) and (max-width: 900px) {
   .menuContainer {
     display: none;
   }
@@ -489,7 +510,7 @@ align-items: center;
   }
 }
 /* laptop */
-@media screen and (min-width: 900px) and (max-width: 1439px) {
+@media screen and (min-width: 900px) and (max-width: 1441px) {
   .doctor-details h1 {
     font-size: 1.5rem;
   }
@@ -507,7 +528,7 @@ align-items: center;
   .appointment-container {
     padding: 0;
   }
-  .slot{
-    padding: 6px 4px;
+  .time-slot{
+    padding: 8px 4px;
   }
 }
