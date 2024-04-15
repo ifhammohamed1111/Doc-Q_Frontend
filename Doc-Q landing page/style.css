@@ -4,15 +4,13 @@
   box-sizing: border-box;
 }
 
- /* GLOBAL COLORS FOR THE LANDING PAGE  */
+/* GLOBAL COLORS FOR THE LANDING PAGE  */
 
-
- :root {
+:root {
   --background-color: #216cb8;
 }
 
-
- /* GLOBAL COLORS FOR THE LANDING PAGE  */
+/* GLOBAL COLORS FOR THE LANDING PAGE  */
 
 /* <!-- common Navbar in every Page --> */
 
@@ -27,7 +25,7 @@
   padding-right: 3%;
   background-color: #fefefe;
   position: sticky;
-  top:1px;
+  top: 1px;
   z-index: 1000;
 }
 
@@ -50,7 +48,6 @@
 ul li a {
   text-decoration: none;
   color: gray;
-
 }
 
 ul li:nth-child(1) a {
@@ -179,7 +176,6 @@ ul li:nth-child(1) a {
   min-height: 80svh;
 }
 
-
 .hero-left {
   display: flex;
 }
@@ -193,7 +189,6 @@ ul li:nth-child(1) a {
   padding-top: 4rem;
   position: relative;
 }
-
 
 #leftWave {
   width: 60%;
@@ -229,7 +224,6 @@ ul li:nth-child(1) a {
   border-radius: 5px;
   background-color: var(--background-color);
 }
-
 
 #dtimg {
   position: absolute;
@@ -454,8 +448,6 @@ ul li:nth-child(1) a {
 }
 
 @media only screen and (min-width: 859px) and (max-width: 1280px) {
- 
-
   #doc-q-title {
     font-size: 2rem;
     width: 65%;
@@ -477,14 +469,11 @@ ul li:nth-child(1) a {
     left: 32%;
     font-size: 1.2rem;
     width: 62%;
-
   }
 
   #dtimg {
     top: 18%;
   }
-
-
 
   /* halftcircle bg  */
   .middleBottom {
@@ -498,7 +487,7 @@ ul li:nth-child(1) a {
 }
 
 /* < ============end of hero section ===========> */
- /* bluestrip starts from here  */
+/* bluestrip starts from here  */
 
 .blueStrip {
   width: 100%;
@@ -571,9 +560,7 @@ ul li:nth-child(1) a {
   }
 }
 
-
 /* bluestrip ends here   */
-
 
 /*
     
@@ -652,8 +639,6 @@ ul li:nth-child(1) a {
   padding: 2rem;
 }
 
-
-
 .feature-title {
   margin: 0 auto;
   width: 90%;
@@ -666,7 +651,7 @@ ul li:nth-child(1) a {
 .doc-card {
   width: 320px;
   height: 320px;
-  margin-top: 40px; 
+  margin-top: 40px;
   padding: 15px;
   border: 1px solid rgba(233, 247, 248, 0.5);
   border-radius: 5px;
@@ -701,7 +686,7 @@ ul li:nth-child(1) a {
 .card-content > p {
   text-overflow: ellipsis;
   max-width: 280px;
-  padding: 10px  10px 0;
+  padding: 10px 10px 0;
   text-overflow: hidden;
   font-family: "Source sans Pro";
   font-size: 20px;
@@ -725,34 +710,28 @@ ul li:nth-child(1) a {
 }
 
 @media screen and (min-width: 421px) and (max-width: 868px) {
-
-
-  .doc-container{
+  .doc-container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-     align-items: center;
+    align-items: center;
     gap: 1rem;
- }
+  }
 
-  
   .doc-card {
     width: 320px;
     height: 320px;
   }
 }
 
-
 @media only screen and (min-width: 869px) and (max-width: 1440px) {
-
-  .doc-container{
-     display: grid;
-     grid-template-columns: repeat(4,1fr);
-     gap: 1rem;
-     justify-items: center;
-     align-items: center;
+  .doc-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
   }
-
 
   .doc-card {
     width: 290px;
@@ -763,30 +742,17 @@ ul li:nth-child(1) a {
     border-radius: 5px;
     transition: transform 0.3s ease;
   }
-
 }
 
 @media only screen and (min-width: 1080px) and (max-width: 1920px) {
-  .doc-container{
+  .doc-container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     justify-items: center;
     align-items: center;
- }
-
-
-
-
-
-
-
+  }
 }
-
-
-
-
-
 
 /* .support starts from here  */
 
@@ -855,11 +821,6 @@ ul li:nth-child(1) a {
   background-color: #e9f7f8;
 }
 
-
-
-
-
-
 @media only screen and (max-width: 480px) {
   .support-card {
     width: 300px;
@@ -903,16 +864,12 @@ ul li:nth-child(1) a {
   }
 }
 
-
 @media only screen and (min-width: 769px) and (max-width: 1280px) {
-
-  .textone{
+  .textone {
     flex-wrap: nowrap;
   }
- 
- 
 
-  .reqimg{
+  .reqimg {
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -923,18 +880,12 @@ ul li:nth-child(1) a {
     height: 280px;
   }
 
-  .my-text{
+  .my-text {
     font-size: 1.3rem;
   }
-
- 
-
 }
 
-
-
 /* support ends here  */
-
 
 /* =================================== Testimonials CSS CODE START ================================ */
 @media (width<=1500px) {
@@ -1075,11 +1026,9 @@ ul li:nth-child(1) a {
   background-color: #5284b5;
 }
 
-
-.top-specialist-section{
+.top-specialist-section {
   margin-top: 2rem;
 }
-
 
 .arrow-frame-wrapper {
   position: relative;
@@ -1290,7 +1239,7 @@ p {
 /* Get Started Section */
 .get-started {
   max-width: 90%;
-  background: linear-gradient(118.17deg, #063360 6.86%, #8ABBF6 103.41%);
+  background: linear-gradient(118.17deg, #063360 6.86%, #8abbf6 103.41%);
   margin-inline: auto;
   margin-block: 40px;
   padding: 40px;
